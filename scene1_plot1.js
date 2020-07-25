@@ -1,4 +1,4 @@
-var plotBarChart = new function (data) {
+const plotBarChart = new function (data) {
 
     //console.log(ParticipationByYear);
     //console.log(data);
