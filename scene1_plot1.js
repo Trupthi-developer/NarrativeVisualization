@@ -16,7 +16,7 @@ var plotBarChart = new function (data) {
     // Y axis
     var y = d3.scaleBand()
       .range([ 0, height ])
-      .domain( data.map(function(d) { return d.Country; }) )
+      .domain( d3.map(data, d=> d.Country; }) )
       .padding(.3);
     svg.append("g")
       .call(d3.axisLeft(y))
