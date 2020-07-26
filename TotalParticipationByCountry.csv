@@ -1,4 +1,4 @@
-Year,Country,SubRegion,NumberOfParticipation,NumberPrevOlympic,RankPerYear
+Year,Country,SubRegion,NumberOfParticipants,NumberPrevOlympic,RankPerYear
 1900,France,Western Europe,732,0,1
 1900,Great Britain,Northern Europe,114,0,2
 1900,Greece,Southern Europe,105,0,3
