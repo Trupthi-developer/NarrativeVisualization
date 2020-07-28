@@ -1,0 +1,780 @@
+Year,Event,Country,NumberOfParticipants,RankByYear
+1900,Summer,France,720,1
+1900,Summer,Great Britain,104,2
+1900,Summer,Germany,76,3
+1900,Summer,United States,75,4
+1900,Summer,Belgium,64,5
+1900,Summer,Netherlands,35,6
+1900,Summer,Italy,23,7
+1900,Summer,Hungary,18,8
+1900,Summer,Switzerland,18,9
+1900,Summer,Austria,16,10
+1900,Summer,Denmark,13,11
+1900,Summer,Sweden,10,12
+1900,Summer,Spain,9,13
+1900,Summer,Bohemia,7,14
+1900,Summer,Norway,7,15
+1904,Summer,France,721,1
+1904,Summer,United States,601,2
+1904,Summer,Great Britain,110,3
+1904,Summer,Germany,98,4
+1904,Summer,Canada,60,5
+1904,Summer,Italy,24,6
+1904,Summer,Hungary,22,7
+1904,Summer,Switzerland,20,8
+1904,Summer,Austria,18,9
+1904,Summer,Greece,17,10
+1904,Summer,Norway,9,11
+1904,Summer,South Africa,8,12
+1904,Summer,Australia,4,13
+1904,Summer,Cuba,4,14
+1904,Summer,Newfoundland,1,15
+1906,Summer,France,777,1
+1906,Summer,United States,639,2
+1906,Summer,Greece,329,3
+1906,Summer,Great Britain,158,4
+1906,Summer,Germany,147,5
+1906,Summer,Italy,100,6
+1906,Summer,Belgium,80,7
+1906,Summer,Canada,63,8
+1906,Summer,Denmark,62,9
+1906,Summer,Hungary,57,10
+1906,Summer,Netherlands,51,11
+1906,Summer,Austria,49,12
+1906,Summer,Sweden,49,13
+1906,Summer,Norway,41,14
+1906,Summer,Switzerland,29,15
+1908,Summer,France,985,1
+1908,Summer,Great Britain,893,2
+1908,Summer,United States,761,3
+1908,Summer,Greece,349,4
+1908,Summer,Germany,229,5
+1908,Summer,Sweden,217,6
+1908,Summer,Belgium,169,7
+1908,Summer,Italy,166,8
+1908,Summer,Netherlands,164,9
+1908,Summer,Canada,150,10
+1908,Summer,Denmark,140,11
+1908,Summer,Hungary,122,12
+1908,Summer,Norway,110,13
+1908,Summer,Finland,66,14
+1908,Summer,Austria,56,15
+1912,Summer,Great Britain,1167,1
+1912,Summer,France,1104,2
+1912,Summer,United States,935,3
+1912,Summer,Sweden,661,4
+1912,Summer,Germany,414,5
+1912,Summer,Greece,371,6
+1912,Summer,Norway,300,7
+1912,Summer,Denmark,292,8
+1912,Summer,Hungary,243,9
+1912,Summer,Italy,232,10
+1912,Summer,Finland,230,11
+1912,Summer,Belgium,205,12
+1912,Summer,Netherlands,197,13
+1912,Summer,Canada,187,14
+1912,Summer,Russia,169,15
+1920,Summer,France,1408,1
+1920,Summer,Great Britain,1401,2
+1920,Summer,United States,1223,3
+1920,Summer,Sweden,921,4
+1920,Summer,Belgium,541,5
+1920,Summer,Norway,494,6
+1920,Summer,Denmark,446,7
+1920,Summer,Greece,418,8
+1920,Summer,Italy,406,9
+1920,Summer,Netherlands,327,10
+1920,Summer,Finland,293,11
+1920,Summer,Canada,239,12
+1920,Summer,Czechoslovakia,119,13
+1920,Summer,Switzerland,114,14
+1920,Summer,South Africa,82,15
+1924,Summer,France,1809,1
+1924,Summer,Great Britain,1668,2
+1924,Summer,United States,1522,3
+1924,Summer,Sweden,1080,4
+1924,Summer,Belgium,713,5
+1924,Summer,Italy,606,6
+1924,Summer,Norway,556,7
+1924,Summer,Denmark,535,8
+1924,Summer,Netherlands,504,9
+1924,Summer,Greece,457,10
+1924,Summer,Finland,414,11
+1924,Summer,Hungary,332,12
+1924,Summer,Canada,304,13
+1924,Summer,Switzerland,255,14
+1924,Summer,Czechoslovakia,252,15
+1928,Summer,France,2065,1
+1928,Summer,Great Britain,1900,2
+1928,Summer,United States,1802,3
+1928,Summer,Sweden,1180,4
+1928,Summer,Belgium,900,5
+1928,Summer,Italy,780,6
+1928,Summer,Netherlands,770,7
+1928,Summer,Germany,709,8
+1928,Summer,Denmark,626,9
+1928,Summer,Norway,608,10
+1928,Summer,Finland,483,11
+1928,Summer,Greece,480,12
+1928,Summer,Hungary,441,13
+1928,Summer,Switzerland,388,14
+1928,Summer,Canada,373,15
+1932,Summer,United States,2276,1
+1932,Summer,France,2168,2
+1932,Summer,Great Britain,2008,3
+1932,Summer,Sweden,1261,4
+1932,Summer,Belgium,936,5
+1932,Summer,Italy,892,6
+1932,Summer,Germany,853,7
+1932,Summer,Netherlands,815,8
+1932,Summer,Denmark,669,9
+1932,Summer,Norway,615,10
+1932,Summer,Finland,523,11
+1932,Summer,Hungary,499,12
+1932,Summer,Greece,490,13
+1932,Summer,Canada,475,14
+1932,Summer,Switzerland,395,15
+1936,Summer,United States,2635,1
+1936,Summer,France,2369,2
+1936,Summer,Great Britain,2216,3
+1936,Summer,Sweden,1432,4
+1936,Summer,Germany,1286,5
+1936,Summer,Italy,1136,6
+1936,Summer,Belgium,1086,7
+1936,Summer,Netherlands,980,8
+1936,Summer,Denmark,790,9
+1936,Summer,Hungary,715,10
+1936,Summer,Norway,685,11
+1936,Summer,Finland,631,12
+1936,Summer,Switzerland,585,13
+1936,Summer,Canada,572,14
+1936,Summer,Czechoslovakia,537,15
+1948,Summer,United States,2935,1
+1948,Summer,France,2685,2
+1948,Summer,Great Britain,2619,3
+1948,Summer,Sweden,1613,4
+1948,Summer,Italy,1351,5
+1948,Summer,Belgium,1238,6
+1948,Summer,Netherlands,1129,7
+1948,Summer,Denmark,952,8
+1948,Summer,Hungary,843,9
+1948,Summer,Switzerland,771,10
+1948,Summer,Norway,766,11
+1948,Summer,Finland,760,12
+1948,Summer,Canada,699,13
+1948,Summer,Austria,663,14
+1948,Summer,Czechoslovakia,624,15
+1952,Summer,United States,3221,1
+1952,Summer,France,2930,2
+1952,Summer,Great Britain,2876,3
+1952,Summer,Sweden,1819,4
+1952,Summer,Italy,1582,5
+1952,Summer,Germany,1491,6
+1952,Summer,Belgium,1373,7
+1952,Summer,Netherlands,1233,8
+1952,Summer,Denmark,1081,9
+1952,Summer,Hungary,1032,10
+1952,Summer,Finland,1018,11
+1952,Summer,Switzerland,928,12
+1952,Summer,Norway,868,13
+1952,Summer,Canada,806,14
+1952,Summer,Austria,775,15
+1956,Summer,United States,3518,1
+1956,Summer,France,3067,2
+1956,Summer,Great Britain,3065,3
+1956,Summer,Sweden,1907,4
+1956,Summer,Italy,1711,5
+1956,Summer,Germany,1649,6
+1956,Summer,Belgium,1427,7
+1956,Summer,Hungary,1140,8
+1956,Summer,Denmark,1112,9
+1956,Summer,Finland,1082,10
+1956,Summer,Canada,898,11
+1956,Summer,Norway,886,12
+1956,Summer,Austria,804,13
+1956,Summer,Czechoslovakia,786,14
+1956,Summer,Greece,653,15
+1960,Summer,United States,3810,1
+1960,Summer,Great Britain,3318,2
+1960,Summer,France,3305,3
+1960,Summer,Sweden,2041,4
+1960,Summer,Italy,1991,5
+1960,Summer,Germany,1942,6
+1960,Summer,Belgium,1528,7
+1960,Summer,Netherlands,1343,8
+1960,Summer,Hungary,1324,9
+1960,Summer,Denmark,1212,10
+1960,Summer,Finland,1199,11
+1960,Summer,Switzerland,1077,12
+1960,Summer,Canada,983,13
+1960,Summer,Norway,926,14
+1960,Summer,Austria,907,15
+1964,Summer,United States,4156,1
+1964,Summer,Great Britain,3522,2
+1964,Summer,France,3443,3
+1964,Summer,Germany,2279,4
+1964,Summer,Italy,2159,5
+1964,Summer,Sweden,2135,6
+1964,Summer,Belgium,1589,7
+1964,Summer,Hungary,1506,8
+1964,Summer,Netherlands,1468,9
+1964,Summer,Finland,1288,10
+1964,Summer,Denmark,1272,11
+1964,Summer,Soviet Union,1167,12
+1964,Summer,Switzerland,1143,13
+1964,Summer,Japan,1122,14
+1964,Summer,Canada,1098,15
+1968,Summer,United States,4513,1
+1968,Summer,Great Britain,3747,2
+1968,Summer,France,3643,3
+1968,Summer,Italy,2326,4
+1968,Summer,Sweden,2235,5
+1968,Summer,Hungary,1673,6
+1968,Summer,Belgium,1671,7
+1968,Summer,Netherlands,1575,8
+1968,Summer,Soviet Union,1479,9
+1968,Summer,Finland,1354,10
+1968,Summer,Denmark,1336,11
+1968,Summer,Japan,1293,12
+1968,Summer,Canada,1237,13
+1968,Summer,Switzerland,1228,14
+1968,Summer,Australia,1130,15
+1972,Summer,United States,4913,1
+1972,Summer,Great Britain,4031,2
+1972,Summer,France,3870,3
+1972,Summer,Italy,2550,4
+1972,Summer,Sweden,2366,5
+1972,Summer,Hungary,1905,6
+1972,Summer,Soviet Union,1850,7
+1972,Summer,Belgium,1759,8
+1972,Summer,Netherlands,1694,9
+1972,Summer,Japan,1477,10
+1972,Summer,Denmark,1462,11
+1972,Summer,Finland,1450,12
+1972,Summer,Canada,1445,13
+1972,Summer,Switzerland,1379,14
+1972,Summer,Poland,1372,15
+1976,Summer,United States,5309,1
+1976,Summer,Great Britain,4273,2
+1976,Summer,France,4076,3
+1976,Summer,Italy,2760,4
+1976,Summer,Sweden,2482,5
+1976,Summer,Soviet Union,2260,6
+1976,Summer,Hungary,2083,7
+1976,Summer,Belgium,1860,8
+1976,Summer,Canada,1830,9
+1976,Summer,Netherlands,1802,10
+1976,Summer,Japan,1690,11
+1976,Summer,Poland,1579,12
+1976,Summer,Finland,1533,13
+1976,Summer,Denmark,1528,14
+1976,Summer,Australia,1478,15
+1980,Summer,Great Britain,4492,1
+1980,Summer,France,4197,2
+1980,Summer,Italy,2919,3
+1980,Summer,Soviet Union,2749,4
+1980,Summer,Sweden,2627,5
+1980,Summer,Hungary,2346,6
+1980,Summer,Belgium,1919,7
+1980,Summer,Poland,1885,8
+1980,Summer,Netherlands,1877,9
+1980,Summer,Czechoslovakia,1680,10
+1980,Summer,Finland,1638,11
+1980,Summer,Australia,1598,12
+1980,Summer,Denmark,1586,13
+1980,Summer,Switzerland,1502,14
+1980,Summer,Austria,1260,15
+1984,Summer,United States,5831,1
+1984,Summer,Great Britain,4829,2
+1984,Summer,France,4435,3
+1984,Summer,Italy,3187,4
+1984,Summer,Sweden,2801,5
+1984,Summer,Canada,2238,6
+1984,Summer,Netherlands,2013,7
+1984,Summer,Belgium,1982,8
+1984,Summer,Japan,1916,9
+1984,Summer,Australia,1840,10
+1984,Summer,Finland,1724,11
+1984,Summer,Denmark,1646,12
+1984,Summer,Switzerland,1631,13
+1984,Summer,West Germany,1378,14
+1984,Summer,Austria,1362,15
+1988,Summer,United States,6358,1
+1988,Summer,Great Britain,5174,2
+1988,Summer,France,4701,3
+1988,Summer,Italy,3440,4
+1988,Summer,Soviet Union,3230,5
+1988,Summer,Sweden,2986,6
+1988,Summer,Canada,2566,7
+1988,Summer,Hungary,2534,8
+1988,Summer,Japan,2171,9
+1988,Summer,Netherlands,2160,10
+1988,Summer,Australia,2092,11
+1988,Summer,Belgium,2041,12
+1988,Summer,Poland,2028,13
+1988,Summer,Czechoslovakia,1843,14
+1988,Summer,Finland,1802,15
+1992,Summer,United States,6903,1
+1992,Summer,Great Britain,5545,2
+1992,Summer,France,5040,3
+1992,Summer,Italy,3744,4
+1992,Summer,Sweden,3173,5
+1992,Summer,Canada,2861,6
+1992,Summer,Hungary,2751,7
+1992,Summer,Germany,2742,8
+1992,Summer,Japan,2427,9
+1992,Summer,Australia,2371,10
+1992,Summer,Netherlands,2361,11
+1992,Summer,Poland,2229,12
+1992,Summer,Belgium,2109,13
+1992,Summer,Czechoslovakia,2051,14
+1992,Summer,Finland,1890,15
+1996,Summer,United States,7550,1
+1996,Summer,Great Britain,5845,2
+1996,Summer,France,5341,3
+1996,Summer,Italy,4084,4
+1996,Summer,Sweden,3350,5
+1996,Summer,Germany,3208,6
+1996,Summer,Canada,3165,7
+1996,Summer,Hungary,2964,8
+1996,Summer,Australia,2788,9
+1996,Summer,Japan,2734,10
+1996,Summer,Netherlands,2600,11
+1996,Summer,Poland,2394,12
+1996,Summer,Belgium,2170,13
+1996,Summer,Spain,2168,14
+1996,Summer,Finland,1966,15
+2000,Summer,United States,8136,1
+2000,Summer,Great Britain,6155,2
+2000,Summer,France,5678,3
+2000,Summer,Italy,4445,4
+2000,Summer,Germany,3630,5
+2000,Summer,Sweden,3500,6
+2000,Summer,Canada,3459,7
+2000,Summer,Australia,3405,8
+2000,Summer,Hungary,3142,9
+2000,Summer,Japan,3000,10
+2000,Summer,Netherlands,2831,11
+2000,Summer,Poland,2581,12
+2000,Summer,Spain,2489,13
+2000,Summer,Belgium,2238,14
+2000,Summer,Denmark,2050,15
+2004,Summer,United States,8669,1
+2004,Summer,Great Britain,6419,2
+2004,Summer,France,5986,3
+2004,Summer,Italy,4809,4
+2004,Summer,Germany,4071,5
+2004,Summer,Australia,3875,6
+2004,Summer,Canada,3722,7
+2004,Summer,Sweden,3615,8
+2004,Summer,Hungary,3351,9
+2004,Summer,Japan,3306,10
+2004,Summer,Netherlands,3041,11
+2004,Summer,Spain,2806,12
+2004,Summer,Poland,2775,13
+2004,Summer,Belgium,2288,14
+2004,Summer,Switzerland,2147,15
+2008,Summer,United States,9257,1
+2008,Summer,Great Britain,6723,2
+2008,Summer,France,6295,3
+2008,Summer,Italy,5142,4
+2008,Summer,Germany,4491,5
+2008,Summer,Australia,4307,6
+2008,Summer,Canada,4054,7
+2008,Summer,Sweden,3738,8
+2008,Summer,Japan,3638,9
+2008,Summer,Hungary,3522,10
+2008,Summer,Netherlands,3278,11
+2008,Summer,Spain,3090,12
+2008,Summer,Poland,3032,13
+2008,Summer,Belgium,2382,14
+2008,Summer,China,2367,15
+2012,Summer,United States,9787,1
+2012,Summer,Great Britain,7253,2
+2012,Summer,France,6619,3
+2012,Summer,Italy,5423,4
+2012,Summer,Germany,4874,5
+2012,Summer,Australia,4711,6
+2012,Summer,Canada,4327,7
+2012,Summer,Japan,3929,8
+2012,Summer,Sweden,3871,9
+2012,Summer,Hungary,3674,10
+2012,Summer,Netherlands,3451,11
+2012,Summer,Spain,3368,12
+2012,Summer,Poland,3242,13
+2012,Summer,China,2742,14
+2012,Summer,South Korea,2599,15
+2016,Summer,United States,10354,1
+2016,Summer,France,7029,2
+2016,Summer,Italy,5735,3
+2016,Summer,Germany,5315,4
+2016,Summer,Australia,5142,5
+2016,Summer,Canada,4648,6
+2016,Summer,Japan,4275,7
+2016,Summer,Sweden,4035,8
+2016,Summer,Hungary,3828,9
+2016,Summer,Netherlands,3700,10
+2016,Summer,Spain,3681,11
+2016,Summer,Poland,3484,12
+2016,Summer,China,3146,13
+2016,Summer,Brazil,3002,14
+2016,Summer,Russia,2614,15
+1924,Winter,Great Britain,44,1
+1924,Winter,France,43,2
+1924,Winter,Sweden,31,3
+1924,Winter,Switzerland,30,4
+1924,Winter,Czechoslovakia,27,5
+1924,Winter,United States,24,6
+1924,Winter,Italy,23,7
+1924,Winter,Belgium,18,8
+1924,Winter,Finland,17,9
+1924,Winter,Norway,14,10
+1924,Winter,Canada,12,11
+1924,Winter,India,7,12
+1924,Winter,Poland,7,13
+1924,Winter,Austria,4,14
+1924,Winter,Hungary,4,15
+1928,Winter,Germany,44,1
+1928,Winter,Switzerland,71,2
+1928,Winter,Austria,43,3
+1928,Winter,France,81,4
+1928,Winter,Great Britain,76,5
+1928,Winter,Belgium,43,6
+1928,Winter,Czechoslovakia,52,7
+1928,Winter,Norway,39,8
+1928,Winter,Poland,31,9
+1928,Winter,Sweden,55,10
+1928,Winter,United States,48,11
+1928,Winter,Canada,35,12
+1928,Winter,Finland,35,13
+1928,Winter,Hungary,17,14
+1928,Winter,Italy,36,15
+1932,Winter,Canada,77,1
+1932,Winter,Germany,64,2
+1932,Winter,Norway,58,3
+1932,Winter,Japan,22,4
+1932,Winter,Poland,46,5
+1932,Winter,Italy,48,6
+1932,Winter,Sweden,67,7
+1932,Winter,France,89,8
+1932,Winter,Austria,50,9
+1932,Winter,Finland,42,10
+1932,Winter,Czechoslovakia,58,11
+1932,Winter,Yugoslavia,10,12
+1932,Winter,Belgium,48,13
+1932,Winter,Great Britain,80,14
+1932,Winter,Hungary,21,15
+1936,Winter,United States,112,1
+1936,Winter,Austria,110,2
+1936,Winter,Germany,119,3
+1936,Winter,Czechoslovakia,102,4
+1936,Winter,Italy,88,5
+1936,Winter,Great Britain,118,6
+1936,Winter,Switzerland,105,7
+1936,Winter,Sweden,99,8
+1936,Winter,Japan,53,9
+1936,Winter,Norway,89,10
+1936,Winter,Canada,106,11
+1936,Winter,France,117,12
+1936,Winter,Belgium,75,13
+1936,Winter,Latvia,29,14
+1936,Winter,Hungary,46,15
+1948,Winter,Great Britain,173,1
+1948,Winter,United States,167,2
+1948,Winter,Austria,164,3
+1948,Winter,Italy,142,4
+1948,Winter,Norway,138,5
+1948,Winter,Czechoslovakia,149,6
+1948,Winter,Sweden,142,7
+1948,Winter,France,153,8
+1948,Winter,Poland,95,9
+1948,Winter,Canada,134,10
+1948,Winter,Finland,85,11
+1948,Winter,Hungary,68,12
+1948,Winter,Yugoslavia,27,13
+1948,Winter,Belgium,86,14
+1948,Winter,Liechtenstein,14,15
+1952,Winter,Norway,211,1
+1952,Winter,Switzerland,182,2
+1952,Winter,United States,236,3
+1952,Winter,Germany,172,4
+1952,Winter,Finland,135,5
+1952,Winter,Austria,203,6
+1952,Winter,Canada,173,7
+1952,Winter,Italy,175,8
+1952,Winter,Poland,125,9
+1952,Winter,France,179,10
+1952,Winter,Czechoslovakia,171,11
+1952,Winter,Great Britain,191,12
+1952,Winter,Yugoslavia,44,13
+1952,Winter,Romania,52,14
+1952,Winter,Japan,66,15
+1956,Winter,United States,302,1
+1956,Winter,Italy,240,2
+1956,Winter,Sweden,207,3
+1956,Winter,Germany,235,4
+1956,Winter,Austria,263,5
+1956,Winter,Switzerland,237,6
+1956,Winter,Soviet Union,53,7
+1956,Winter,Poland,176,8
+1956,Winter,Norway,256,9
+1956,Winter,Czechoslovakia,212,10
+1956,Winter,Great Britain,232,11
+1956,Winter,Canada,208,12
+1956,Winter,France,211,13
+1956,Winter,Finland,166,14
+1956,Winter,Romania,71,15
+1960,Winter,Germany,309,1
+1960,Winter,United States,369,2
+1960,Winter,Switzerland,296,3
+1960,Winter,Sweden,265,4
+1960,Winter,Finland,214,5
+1960,Winter,Canada,252,6
+1960,Winter,Japan,117,7
+1960,Winter,Australia,49,8
+1960,Winter,Norway,285,9
+1960,Winter,Italy,268,10
+1960,Winter,Austria,289,11
+1960,Winter,France,237,12
+1960,Winter,Czechoslovakia,233,13
+1960,Winter,Great Britain,249,14
+1960,Winter,Yugoslavia,67,15
+1964,Winter,Germany,405,1
+1964,Winter,Austria,372,2
+1964,Winter,United States,448,3
+1964,Winter,Soviet Union,115,4
+1964,Winter,Italy,329,5
+1964,Winter,Norway,343,6
+1964,Winter,Canada,307,7
+1964,Winter,Finland,265,8
+1964,Winter,Poland,240,9
+1964,Winter,Japan,164,10
+1964,Winter,Sweden,312,11
+1964,Winter,Czechoslovakia,279,12
+1964,Winter,Great Britain,285,13
+1964,Winter,Hungary,113,14
+1964,Winter,Romania,98,15
+1968,Winter,United States,538,1
+1968,Winter,Austria,448,2
+1968,Winter,France,336,3
+1968,Winter,Switzerland,389,4
+1968,Winter,Canada,377,5
+1968,Winter,Soviet Union,184,6
+1968,Winter,Norway,408,7
+1968,Winter,Japan,225,8
+1968,Winter,East Germany,57,9
+1968,Winter,Sweden,369,10
+1968,Winter,Finland,317,11
+1968,Winter,Czechoslovakia,327,12
+1968,Winter,Italy,376,13
+1968,Winter,Great Britain,323,14
+1968,Winter,Poland,271,15
+1972,Winter,United States,634,1
+1972,Winter,West Germany,87,2
+1972,Winter,Japan,310,3
+1972,Winter,Soviet Union,258,4
+1972,Winter,Sweden,437,5
+1972,Winter,Norway,475,6
+1972,Winter,Finland,367,7
+1972,Winter,Canada,424,8
+1972,Winter,Italy,420,9
+1972,Winter,East Germany,99,10
+1972,Winter,Czechoslovakia,368,11
+1972,Winter,Austria,488,12
+1972,Winter,France,376,13
+1972,Winter,Great Britain,360,14
+1972,Winter,Switzerland,423,15
+1976,Winter,United States,737,1
+1976,Winter,West Germany,165,2
+1976,Winter,Austria,565,3
+1976,Winter,Soviet Union,334,4
+1976,Winter,Canada,483,5
+1976,Winter,East Germany,158,6
+1976,Winter,Czechoslovakia,426,7
+1976,Winter,Italy,478,8
+1976,Winter,Japan,368,9
+1976,Winter,Sweden,495,10
+1976,Winter,Poland,327,11
+1976,Winter,Switzerland,475,12
+1976,Winter,Finland,414,13
+1976,Winter,Poland,374,14
+1976,Winter,Great Britain,402,15
+1980,Winter,United States,843,1
+1980,Winter,Soviet Union,413,2
+1980,Winter,West Germany,236,3
+1980,Winter,Canada,542,4
+1980,Winter,Switzerland,534,5
+1980,Winter,East Germany,211,6
+1980,Winter,Finland,466,7
+1980,Winter,Japan,418,8
+1980,Winter,Great Britain,450,9
+1980,Winter,Italy,524,10
+1980,Winter,Austria,608,11
+1980,Winter,Czechoslovakia,467,12
+1980,Winter,Sweden,534,13
+1980,Winter,Romania,173,14
+1980,Winter,Netherlands,107,15
+1984,Winter,United States,944,1
+1984,Winter,Soviet Union,499,2
+1984,Winter,West Germany,316,3
+1984,Winter,Italy,598,4
+1984,Winter,Canada,609,5
+1984,Winter,Austria,673,6
+1984,Winter,Norway,581,7
+1984,Winter,Sweden,595,8
+1984,Winter,Norway,639,9
+1984,Winter,East Germany,267,10
+1984,Winter,Czechoslovakia,517,11
+1984,Winter,Great Britain,500,12
+1984,Winter,Finland,511,13
+1984,Winter,Switzerland,578,14
+1984,Winter,Japan,457,15
+1988,Winter,Canada,721,1
+1988,Winter,United States,1051,2
+1988,Winter,Soviet Union,598,3
+1988,Winter,West Germany,400,4
+1988,Winter,Austria,754,5
+1988,Winter,Yugoslavia,269,6
+1988,Winter,France,533,7
+1988,Winter,Norway,702,8
+1988,Winter,Sweden,655,9
+1988,Winter,Czechoslovakia,576,10
+1988,Winter,Italy,656,11
+1988,Winter,East Germany,320,12
+1988,Winter,Finland,564,13
+1988,Winter,Great Britain,548,14
+1988,Winter,Japan,505,15
+1992,Winter,United States,1168,1
+1992,Winter,Germany,516,2
+1992,Winter,France,642,3
+1992,Winter,Canada,829,4
+1992,Winter,Italy,763,5
+1992,Winter,Soviet Union,699,6
+1992,Winter,West Germany,490,7
+1992,Winter,Norway,782,8
+1992,Winter,Czechoslovakia,650,9
+1992,Winter,Switzerland,690,10
+1992,Winter,Sweden,722,11
+1992,Winter,Finland,626,12
+1992,Winter,Japan,565,13
+1992,Winter,Austria,812,14
+1992,Winter,Poland,519,15
+1994,Winter,United States,1315,1
+1994,Winter,Unified Team,129,2
+1994,Winter,Germany,628,3
+1994,Winter,Italy,867,4
+1994,Winter,France,740,5
+1994,Winter,Canada,924,6
+1994,Winter,Norway,870,7
+1994,Winter,Austria,892,8
+1994,Winter,Switzerland,764,9
+1994,Winter,Sweden,795,10
+1994,Winter,Czech Republic,63,11
+1994,Winter,Finland,687,12
+1994,Winter,Japan,624,13
+1994,Winter,Belarus,33,14
+1994,Winter,Great Britain,629,15
+1998,Winter,Japan,780,1
+1998,Winter,United States,1462,2
+1998,Winter,Canada,1068,3
+1998,Winter,Germany,753,4
+1998,Winter,Italy,980,5
+1998,Winter,Russia,113,6
+1998,Winter,France,846,7
+1998,Winter,Austria,988,8
+1998,Winter,Finland,772,9
+1998,Winter,Sweden,879,10
+1998,Winter,Norway,946,11
+1998,Winter,Czech Republic,124,12
+1998,Winter,Kazakhstan,89,13
+1998,Winter,Belarus,92,14
+1998,Winter,Switzerland,823,15
+2002,Winter,United States,1648,1
+2002,Winter,Germany,910,2
+2002,Winter,Russia,264,3
+2002,Winter,Canada,1218,4
+2002,Winter,Russia,386,5
+2002,Winter,France,960,6
+2002,Winter,Italy,1089,7
+2002,Winter,Japan,883,8
+2002,Winter,Sweden,978,9
+2002,Winter,Finland,870,10
+2002,Winter,Austria,1078,11
+2002,Winter,Norway,1023,12
+2002,Winter,Czech Republic,200,13
+2002,Winter,Switzerland,892,14
+2002,Winter,China,253,15
+2006,Winter,United States,1850,1
+2006,Winter,Canada,1409,2
+2006,Winter,Italy,1268,3
+2006,Winter,Germany,1065,4
+2006,Winter,Japan,993,5
+2006,Winter,Switzerland,1002,6
+2006,Winter,Sweden,1080,7
+2006,Winter,Finland,960,8
+2006,Winter,Czech Republic,283,9
+2006,Winter,France,1042,10
+2006,Winter,Austria,1151,11
+2006,Winter,China,326,12
+2006,Winter,Ukraine,161,13
+2006,Winter,Norway,1090,14
+2006,Winter,Latvia,212,15
+2010,Winter,United States,2054,1
+2010,Winter,Canada,1610,2
+2010,Winter,Russia,560,3
+2010,Winter,Germany,1214,4
+2010,Winter,Switzerland,1127,5
+2010,Winter,Italy,1377,6
+2010,Winter,Sweden,1186,7
+2010,Winter,France,1146,8
+2010,Winter,Norway,1185,9
+2010,Winter,Finland,1051,10
+2010,Winter,Japan,1084,11
+2010,Winter,Czech Republic,373,12
+2010,Winter,China,412,13
+2010,Winter,Austria,1226,14
+2010,Winter,Slovakia,186,15
+2014,Winter,Canada,1827,1
+2014,Winter,United States,2266,2
+2014,Winter,Russia,735,3
+2014,Winter,Germany,1365,4
+2014,Winter,Switzerland,1261,5
+2014,Winter,Austria,1352,6
+2014,Winter,Japan,1195,7
+2014,Winter,Italy,1487,8
+2014,Winter,Norway,1295,9
+2014,Winter,France,1253,10
+2014,Winter,Sweden,1287,11
+2014,Winter,Finland,1150,12
+2014,Winter,Czech Republic,460,13
+2014,Winter,Slovakia,254,14
+2014,Winter,China,474,15
+1956,Equestrian,Germany,9,1
+1956,Equestrian,Soviet Union,9,1
+1956,Equestrian,Sweden,9,1
+1956,Equestrian,Switzerland,9,1
+1956,Equestrian,France,8,2
+1956,Equestrian,Great Britain,8,2
+1956,Equestrian,United States,8,2
+1956,Equestrian,Argentina,7,3
+1956,Equestrian,Finland,7,3
+1956,Equestrian,Portugal,7,3
+1956,Equestrian,Denmark,6,4
+1956,Equestrian,Ireland,6,4
+1956,Equestrian,Italy,6,4
+1956,Equestrian,Romania,6,4
+1956,Equestrian,Spain,6,4
+1956,Equestrian,Turkey,6,4
+1956,Equestrian,Austria,5,5
+1956,Equestrian,Australia,4,6
+1956,Equestrian,Bulgaria,4,6
+1956,Equestrian,Canada,4,6
+1956,Equestrian,Norway,4,6
+1956,Equestrian,Belgium,3,7
+1956,Equestrian,Brazil,3,7
+1956,Equestrian,Egypt,3,7
+1956,Equestrian,Hungary,3,7
+1956,Equestrian,Venezuela,3,7
+1956,Equestrian,Cambodia,2,8
+1956,Equestrian,Japan,2,8
+1956,Equestrian,Netherlands,1,9
