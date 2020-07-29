@@ -2,98 +2,90 @@ ID,Country,Participants
 AFG,Afghanistan,101
 ALB,Albania,41
 ALG,Algeria,321
-ASA,American Samoa,25
-AND,Andorra,57
-ANG,Angola,148
+ASM,American Samoa,25
+AGO,Angola,148
 ANT,Antigua and Barbuda,63
 ARG,Argentina,1695
 ARM,Armenia,120
 ARU,Aruba,26
-ANZ,Australasia,53
 AUS,Australia,3540
 AUT,Austria,2288
 AZE,Azerbaijan,155
-BAH,Bahamas,147
+BHS,Bahamas,147
 BRN,Bahrain,59
-BAN,Bangladesh,32
+BGD,Bangladesh,32
 BAR,Barbados,106
 BLR,Belarus,695
 BEL,Belgium,2015
-BIZ,Belize,49
+BLZ,Belize,49
 BEN,Benin,48
 BER,Bermuda,115
-BHU,Bhutan,19
-BOH,Bohemia,66
+BTN,Bhutan,19
 BOL,Bolivia,79
 BIH,Bosnia and Herzegovina,65
-BOT,Botswana,52
+BWA,Botswana,52
 BRA,Brazil,1697
 IVB,British Virgin Islands,25
-BRU,Brunei,6
-BUL,Bulgaria,1395
-BUR,Burkina Faso,29
+BRN,Brunei,6
+BGR,Bulgaria,1395
+BFA,Burkina Faso,29
 BDI,Burundi,20
-CAM,Cambodia,40
+KHM,Cambodia,40
 CMR,Cameroon,208
 CAN,Canada,4582
 CPV,Cape Verde,9
 CAY,Cayman Islands,36
 CAF,Central African Republic,47
-CHA,Chad,25
+TCD,Chad,25
 CHI,Chile,497
 CHN,China,2244
-TPE,Chinese Taipei,529
 COL,Colombia,522
 COM,Comoros,12
-CGO,Congo (Brazzaville),66
+COG,Congo (Brazzaville),66
 COD,Congo (Kinshasa),65
 COK,Cook Islands,24
-CRC,Costa Rica,150
-CIV,Cote d'Ivoire,116
+CRI,Costa Rica,150
 CRT,Crete,8
 CRO,Croatia,382
-CUB,Cuba,1198
+HRV,Cuba,1198
 CYP,Cyprus,110
 CZE,Czech Republic,693
-TCH,Czechoslovakia,2074
-DEN,Denmark,1803
+DNK,Denmark,1803
 DJI,Djibouti,22
 DMA,Dominica,15
 DOM,Dominican Republic,187
-GDR,East Germany,1356
 ECU,Ecuador,139
 EGY,Egypt,895
-ESA,El Salvador,119
-GEQ,Equatorial Guinea,26
+SLV,El Salvador,119
+GNQ,Equatorial Guinea,26
 ERI,Eritrea,20
 EST,Estonia,328
 ETH,Ethiopia,206
 FSM,Federated States of Micronesia,14
-FIJ,Fiji,81
+FJI,Fiji,81
 FIN,Finland,2303
 FRA,France,5899
 GAB,Gabon,45
-GAM,Gambia,29
+GMB,Gambia,29
 GEO,Georgia,139
-GER,Germany,4586
+DEU,Germany,7643
 GHA,Ghana,231
 GBR,Great Britain,6027
-GRE,Greece,1651
+GRC,Greece,1651
 GRN,Grenada,40
 GUM,Guam,63
 GUA,Guatemala,226
-GUI,Guinea,54
-GBS,Guinea Bissau,11
+GIN,Guinea,54
+GNB,Guinea Bissau,11
 GUY,Guyana,70
-HAI,Haiti,67
-HON,Honduras,114
+HTI,Haiti,67
+HND,Honduras,114
 HKG,Hong Kong,296
 HUN,Hungary,2605
 ISL,Iceland,285
 IND,India,790
-IOA,Individual Olympic Athletes,67
-INA,Indonesia,257
-IRI,Iran,486
+IDN,Indonesia,257
+IRN,Iran,486
 IRQ,Iraq,174
 IRL,Ireland,742
 ISR,Israel,319
@@ -101,62 +93,57 @@ ITA,Italy,4741
 JAM,Jamaica,331
 JPN,Japan,3801
 JOR,Jordan,55
-KAZ,Kazakhstan,625
+KGZ,Kazakhstan,625
 KEN,Kenya,453
 KIR,Kiribati,7
-KUW,Kuwait,192
+KWT,Kuwait,192
 KGZ,Kyrgyzstan,116
 LAO,Laos,43
-LAT,Latvia,431
-LIB,Lebanon,171
-LES,Lesotho,45
+LVA,Latvia,431
+LBN,Lebanon,171
+LSO,Lesotho,45
 LBR,Liberia,40
-LBA,Libya,61
+LBY,Libya,61
 LIE,Liechtenstein,130
 LTU,Lithuania,283
 LUX,Luxembourg,375
 MKD,Macedonia,42
-MAD,Madagascar,73
-MAW,Malawi,54
-MAL,Malaya,40
-MAS,Malaysia,282
+MDG,Madagascar,73
+MWI,Malawi,54
+MYS,Malaysia,282
 MDV,Maldives,29
 MLI,Mali,70
 MLT,Malta,77
 MHL,Marshall Islands,8
-MTN,Mauritania,21
+MRT,Mauritania,21
 MRI,Mauritius,80
 MEX,Mexico,1414
 MDA,Moldova,116
 MON,Monaco,81
-MGL,Mongolia,265
+MNG,Mongolia,265
 MNE,Montenegro,44
 MAR,Morocco,427
 MOZ,Mozambique,47
-MYA,Myanmar,78
+MMR,Myanmar,78
 NAM,Namibia,34
 NRU,Nauru,8
-NEP,Nepal,73
-NED,Netherlands,2781
-AHO,Netherlands Antilles,55
+NPL,Nepal,73
+NLD,Netherlands,2781
 NZL,New Zealand,1197
-NFL,Newfoundland,1
-NCA,Nicaragua,90
-NIG,Niger,36
-NGR,Nigeria,513
-NBO,North Borneo,2
+NIC,Nicaragua,90
+NER,Niger,36
+NGA,Nigeria,513
 PRK,North Korea,377
-YAR,North Yemen,10
 NOR,Norway,2176
-OMA,Oman,39
+OMN,Oman,39
 PAK,Pakistan,335
 PLW,Palau,18
 PLE,Palestine,15
 PAN,Panama,79
 PNG,Papua New Guinea,56
-PAR,Paraguay,98
+PRY,Paraguay,98
 PER,Peru,329
-PHI,Philippines,380
+PHL,Philippines,380
 POL,Poland,2821
 POR,Portugal,649
 PUR,Puerto Rico,527
@@ -164,29 +151,24 @@ QAT,Qatar,108
 ROU,Romania,1728
 RUS,Russia,2223
 RWA,Rwanda,32
-SAA,Saar,36
 SKN,Saint Kitts and Nevis,17
 LCA,Saint Lucia,17
 VIN,Saint Vincent and the Grenadines,25
 SAM,Samoa,45
 SMR,San Marino,89
 STP,Sao Tome and Principe,11
-KSA,Saudi Arabia,141
+SAU,Saudi Arabia,141
 SEN,Senegal,218
-SRB,Serbia,174
-SCG,Serbia and Montenegro,205
+SRB,Serbia,379
 SEY,Seychelles,58
 SLE,Sierra Leone,58
-SIN,Singapore,154
+SGP,Singapore,154
 SVK,Slovakia,430
 SLO,Slovenia,384
 SOL,Solomon Islands,18
 SOM,Somalia,20
 RSA,South Africa,861
 KOR,South Korea,2163
-VNM,South Vietnam,39
-YMD,South Yemen,5
-URS,Soviet Union,2900
 ESP,Spain,2401
 SRI,Sri Lanka,87
 SUD,Sudan,76
@@ -198,7 +180,6 @@ SYR,Syria,129
 TJK,Tajikistan,40
 TAN,Tanzania,105
 THA,Thailand,425
-TLS,Timor Leste,6
 TOG,Togo,38
 TGA,Tonga,32
 TTO,Trinidad and Tobago,157
@@ -208,19 +189,15 @@ TKM,Turkmenistan,33
 TUV,Tuvalu,5
 UGA,Uganda,160
 UKR,Ukraine,1013
-EUN,Unified Team,601
-UAE,United Arab Emirates,66
-UAR,United Arab Republic,74
+UAE,United Arab Emirates,140
 USA,United States,9219
 ISV,United States Virgin Islands,146
 URU,Uruguay,351
 UZB,Uzbekistan,249
 VAN,Vanuatu,22
 VEN,Venezuela,493
-VIE,Vietnam,90
-FRG,West Germany,1701
-WIF,West Indies Federation,13
-YEM,Yemen,25
+VIE,Vietnam,129
+YEM,Yemen,40
 YUG,Yugoslavia,1268
 ZAM,Zambia,140
 ZIM,Zimbabwe,167
