@@ -1,457 +1,511 @@
 Year,Country,Summer,Winter
 1900,Australia,2,0
 1900,Canada,4,0
+1900,China,0,0
+1900,France,720,0
+1900,Germany,76,0
+1900,Great Britain,104,0
+1900,Hungary,18,0
+1900,Italy,23,0
+1900,Japan,0,0
+1900,Netherlands,35,0
+1900,Poland,0,0
 1900,Russia,4,0
 1900,Spain,9,0
 1900,Sweden,10,0
-1900,Hungary,18,0
-1900,Italy,23,0
-1900,Netherlands,35,0
 1900,United States,75,0
-1900,Germany,76,0
-1900,Great Britain,104,0
-1900,France,720,0
-1904,France,1,0
-1904,Italy,1,0
 1904,Australia,2,0
-1904,Hungary,4,0
-1904,Great Britain,6,0
-1904,Germany,22,0
 1904,Canada,56,0
+1904,China,0,0
+1904,France,1,0
+1904,Germany,22,0
+1904,Great Britain,6,0
+1904,Hungary,4,0
+1904,Italy,1,0
+1904,Japan,0,0
+1904,Netherlands,0,0
+1904,Poland,0,0
+1904,Russia,0,0
+1904,Spain,0,0
+1904,Sweden,0,0
 1904,United States,526,0
-1906,Canada,3,0
 1906,Australia,4,0
-1906,Netherlands,16,0
-1906,Hungary,35,0
-1906,United States,38,0
-1906,Sweden,39,0
-1906,Great Britain,48,0
-1906,Germany,49,0
+1906,Canada,3,0
+1906,China,0,0
 1906,France,56,0
+1906,Germany,49,0
+1906,Great Britain,48,0
+1906,Hungary,35,0
 1906,Italy,76,0
-1908,Russia,6,0
+1906,Japan,0,0
+1906,Netherlands,16,0
+1906,Poland,0,0
+1906,Russia,0,0
+1906,Spain,0,0
+1906,Sweden,39,0
+1906,United States,38,0
+1908,Australia,0,0
+1908,Canada,87,0
+1908,China,0,0
+1908,France,208,0
+1908,Germany,82,0
+1908,Great Britain,735,0
 1908,Hungary,65,0
 1908,Italy,66,0
-1908,Germany,82,0
-1908,Canada,87,0
+1908,Japan,0,0
 1908,Netherlands,113,0
-1908,United States,122,0
+1908,Poland,0,0
+1908,Russia,6,0
+1908,Spain,0,0
 1908,Sweden,168,0
-1908,France,208,0
-1908,Great Britain,735,0
-1912,Poland,1,0
-1912,Japan,2,0
-1912,Netherlands,33,0
+1908,United States,122,0
+1912,Australia,0,0
 1912,Canada,37,0
-1912,Italy,66,0
+1912,China,0,0
 1912,France,119,0
-1912,Hungary,121,0
-1912,Russia,159,0
-1912,United States,174,0
 1912,Germany,185,0
 1912,Great Britain,274,0
+1912,Hungary,121,0
+1912,Italy,66,0
+1912,Japan,2,0
+1912,Netherlands,33,0
+1912,Poland,1,0
+1912,Russia,159,0
+1912,Spain,0,0
 1912,Sweden,444,0
+1912,United States,174,0
 1920,Australia,13,0
-1920,Japan,15,0
 1920,Canada,52,0
-1920,Spain,58,0
-1920,Netherlands,130,0
-1920,Italy,174,0
+1920,China,0,0
+1920,France,304,0
+1920,Germany,0,0
 1920,Great Britain,234,0
+1920,Hungary,0,0
+1920,Italy,174,0
+1920,Japan,15,0
+1920,Netherlands,130,0
+1920,Poland,0,0
+1920,Russia,0,0
+1920,Spain,58,0
 1920,Sweden,260,0
 1920,United States,288,0
-1920,France,304,0
-1924,Russia,3,0
-1924,Japan,19,0
 1924,Australia,36,1
-1924,Poland,65,7
 1924,Canada,65,12
+1924,China,0,0
+1924,France,401,43
+1924,Germany,0,0
+1924,Great Britain,267,44
 1924,Hungary,89,4
+1924,Italy,200,23
+1924,Japan,19,0
+1924,Netherlands,177,0
+1924,Poland,65,7
+1924,Russia,3,0
 1924,Spain,95,0
 1924,Sweden,159,31
-1924,Netherlands,177,0
-1924,Italy,200,23
-1924,Great Britain,267,44
 1924,United States,299,24
-1924,France,401,43
 1928,Australia,18,0
-1928,Japan,40,6
 1928,Canada,69,23
-1928,Spain,80,0
-1928,Poland,93,24
-1928,Sweden,100,24
+1928,China,0,0
+1928,France,256,38
+1928,Germany,295,44
+1928,Great Britain,232,32
 1928,Hungary,109,13
 1928,Italy,174,13
-1928,Great Britain,232,32
-1928,France,256,38
+1928,Japan,40,6
 1928,Netherlands,266,7
+1928,Poland,93,24
+1928,Russia,0,0
+1928,Spain,80,0
+1928,Sweden,100,24
 1928,United States,280,24
-1928,Germany,295,44
-1932,China,1,0
-1932,Spain,7,0
 1932,Australia,13,0
+1932,Canada,102,42
+1932,China,1,0
+1932,France,103,8
+1932,Germany,144,20
+1932,Great Britain,108,4
+1932,Hungary,58,4
+1932,Italy,112,12
+1932,Japan,157,16
 1932,Netherlands,45,0
 1932,Poland,51,15
-1932,Hungary,58,4
+1932,Russia,0,0
+1932,Spain,7,0
 1932,Sweden,81,12
-1932,Canada,102,42
-1932,France,103,8
-1932,Great Britain,108,4
-1932,Italy,112,12
-1932,Germany,144,20
-1932,Japan,157,16
 1932,United States,474,64
-1936,Spain,0,6
 1936,Australia,32,1
-1936,China,54,0
 1936,Canada,97,29
-1936,Poland,144,20
-1936,Netherlands,165,8
-1936,Sweden,171,32
+1936,China,54,0
 1936,France,201,28
+1936,Germany,433,55
 1936,Great Britain,208,38
 1936,Hungary,216,25
-1936,Japan,220,31
 1936,Italy,244,40
+1936,Japan,220,31
+1936,Netherlands,165,8
+1936,Poland,144,20
+1936,Russia,0,0
+1936,Spain,0,6
+1936,Sweden,171,32
 1936,United States,359,55
-1936,Germany,433,55
-1948,China,31,0
-1948,Poland,37,29
-1948,Spain,65,6
 1948,Australia,75,0
 1948,Canada,127,28
-1948,Hungary,128,22
-1948,Netherlands,149,4
-1948,Sweden,181,43
-1948,Italy,215,54
-1948,United States,300,69
+1948,China,31,0
 1948,France,316,36
+1948,Germany,0,0
 1948,Great Britain,403,55
-1952,China,1,0
-1952,Spain,27,4
-1952,Japan,69,13
+1948,Hungary,128,22
+1948,Italy,215,54
+1948,Japan,0,0
+1948,Netherlands,149,4
+1948,Poland,37,29
+1948,Russia,0,0
+1948,Spain,65,6
+1948,Sweden,181,43
+1948,United States,300,69
 1952,Australia,81,9
-1952,Netherlands,104,11
 1952,Canada,107,39
-1952,Poland,125,30
-1952,Hungary,189,12
-1952,Germany,205,53
-1952,Sweden,206,65
-1952,Italy,231,33
+1952,China,1,0
 1952,France,245,26
+1952,Germany,205,53
 1952,Great Britain,257,18
+1952,Hungary,189,12
+1952,Italy,231,33
+1952,Japan,69,13
+1952,Netherlands,104,11
+1952,Poland,125,30
+1952,Russia,0,0
+1952,Spain,27,4
+1952,Sweden,206,65
 1952,United States,286,66
-1956,Poland,64,51
-1956,Sweden,88,58
-1956,Netherlands,0,8
-1956,Japan,110,10
-1956,Hungary,108,2
-1956,Canada,92,35
 1956,Australia,294,8
-1956,Spain,0,9
-1956,Italy,129,65
+1956,Canada,92,35
+1956,China,0,0
 1956,France,137,32
-1956,Great Britain,189,41
-1956,United States,297,67
 1956,Germany,158,63
-1960,Canada,85,44
-1960,Netherlands,110,7
-1960,Sweden,134,47
-1960,Spain,144,4
-1960,Japan,162,41
-1960,Hungary,184,3
-1960,Poland,185,13
+1956,Great Britain,189,41
+1956,Hungary,108,2
+1956,Italy,129,65
+1956,Japan,110,10
+1956,Netherlands,0,8
+1956,Poland,64,51
+1956,Russia,0,0
+1956,Spain,0,9
+1956,Sweden,88,58
+1956,United States,297,67
 1960,Australia,189,30
+1960,Canada,85,44
+1960,China,0,0
 1960,France,238,26
-1960,Great Britain,253,17
-1960,Italy,280,28
-1960,United States,292,79
 1960,Germany,293,74
+1960,Great Britain,253,17
+1960,Hungary,184,3
+1960,Italy,280,28
+1960,Japan,162,41
+1960,Netherlands,110,7
+1960,Poland,185,13
+1960,Russia,0,0
+1960,Spain,144,4
+1960,Sweden,134,47
+1960,United States,292,79
+1964,Australia,243,5
+1964,Canada,115,55
+1964,China,0,0
+1964,France,138,24
+1964,Germany,337,96
+1964,Great Britain,204,36
+1964,Hungary,182,28
+1964,Italy,168,61
+1964,Japan,328,47
+1964,Netherlands,125,6
+1964,Poland,140,51
+1964,Russia,0,0
 1964,Spain,51,6
 1964,Sweden,94,57
-1964,Canada,115,55
-1964,Netherlands,125,6
-1964,France,138,24
-1964,Poland,140,51
-1964,Italy,168,61
-1964,Hungary,182,28
-1964,Great Britain,204,36
-1964,Australia,243,5
-1964,Japan,328,47
-1964,Germany,337,96
 1964,United States,346,90
-1968,Sweden,100,68
-1968,Netherlands,107,9
-1968,Spain,122,20
 1968,Australia,128,3
 1968,Canada,139,70
+1968,China,0,0
+1968,France,200,75
+1968,Germany,275,144
+1968,Great Britain,225,38
 1968,Hungary,167,10
 1968,Italy,167,47
 1968,Japan,171,61
+1968,Netherlands,107,9
 1968,Poland,177,31
-1968,France,200,75
-1968,Great Britain,225,38
-1968,Germany,275,144
+1968,Russia,0,0
+1968,Spain,122,20
+1968,Sweden,100,68
 1968,United States,357,96
+1972,Australia,168,4
+1972,Canada,208,47
+1972,China,0,0
+1972,France,227,40
+1972,Germany,423,120
+1972,Great Britain,284,37
+1972,Hungary,232,1
+1972,Italy,224,44
+1972,Japan,184,85
 1972,Netherlands,119,11
+1972,Poland,290,47
+1972,Russia,0,0
 1972,Spain,123,3
 1972,Sweden,131,58
-1972,Australia,168,4
-1972,Japan,184,85
-1972,Canada,208,47
-1972,Italy,224,44
-1972,France,227,40
-1972,Hungary,232,1
-1972,Great Britain,284,37
-1972,Poland,290,47
 1972,United States,400,103
-1972,Germany,423,120
-1976,Netherlands,108,7
-1976,Spain,113,4
-1976,Sweden,116,39
-1976,Hungary,178,3
 1976,Australia,180,8
+1976,Canada,385,59
+1976,China,0,0
 1976,France,206,35
-1976,Poland,207,56
+1976,Germany,290,130
+1976,Great Britain,242,42
+1976,Hungary,178,3
 1976,Italy,210,58
 1976,Japan,213,58
-1976,Great Britain,242,42
-1976,Germany,290,130
-1976,Canada,385,59
+1976,Netherlands,108,7
+1976,Poland,207,56
+1976,Russia,0,0
+1976,Spain,113,4
+1976,Sweden,116,39
 1976,United States,396,106
-1980,China,0,24
-1980,Japan,0,50
-1980,Canada,0,59
-1980,United States,0,101
-1980,Netherlands,75,29
 1980,Australia,120,9
+1980,Canada,0,59
+1980,China,0,24
 1980,France,121,22
-1980,Sweden,145,61
-1980,Spain,155,8
-1980,Italy,159,46
+1980,Germany,346,133
 1980,Great Britain,219,48
 1980,Hungary,263,2
+1980,Italy,159,46
+1980,Japan,0,50
+1980,Netherlands,75,29
 1980,Poland,306,30
-1980,Germany,346,133
-1984,Hungary,0,9
-1984,Poland,0,30
-1984,Netherlands,136,13
-1984,Sweden,174,60
-1984,Spain,179,12
-1984,China,215,37
-1984,Japan,226,39
-1984,France,238,32
+1980,Russia,0,0
+1980,Spain,155,8
+1980,Sweden,145,61
+1980,United States,0,101
 1984,Australia,242,10
-1984,Italy,268,74
-1984,Great Britain,337,50
-1984,Germany,390,140
 1984,Canada,408,67
+1984,China,215,37
+1984,France,238,32
+1984,Germany,390,140
+1984,Great Britain,337,50
+1984,Hungary,0,9
+1984,Italy,268,74
+1984,Japan,226,39
+1984,Netherlands,136,13
+1984,Poland,0,30
+1984,Russia,0,0
+1984,Spain,179,12
+1984,Sweden,174,60
 1984,United States,522,107
-1988,Poland,143,32
-1988,Netherlands,147,11
-1988,Sweden,185,67
-1988,Hungary,188,5
-1988,Spain,229,12
 1988,Australia,252,19
+1988,Canada,328,112
+1988,China,273,13
+1988,France,266,68
+1988,Germany,347,143
+1988,Great Britain,345,48
+1988,Hungary,188,5
 1988,Italy,253,58
 1988,Japan,255,48
-1988,France,266,68
-1988,China,273,13
-1988,Canada,328,112
-1988,Great Britain,345,48
-1988,Germany,347,143
+1988,Netherlands,147,11
+1988,Poland,143,32
+1988,Russia,0,0
+1988,Spain,229,12
+1988,Sweden,185,67
 1988,United States,527,117
-1992,Sweden,187,73
-1992,Netherlands,201,19
-1992,Poland,201,53
-1992,Hungary,217,24
-1992,China,244,32
-1992,Japan,256,60
 1992,Australia,279,22
 1992,Canada,295,108
-1992,Italy,304,107
+1992,China,244,32
 1992,France,339,109
-1992,Great Britain,371,49
-1992,Spain,422,17
 1992,Germany,463,111
+1992,Great Britain,371,49
+1992,Hungary,217,24
+1992,Italy,304,107
+1992,Japan,256,60
+1992,Netherlands,201,19
+1992,Poland,201,53
+1992,Russia,0,0
+1992,Spain,422,17
+1992,Sweden,187,73
 1992,United States,545,147
-1994,Spain,0,13
-1994,Hungary,0,16
-1994,Netherlands,0,21
-1994,China,0,24
 1994,Australia,0,25
-1994,Poland,0,28
-1994,Great Britain,0,32
-1994,Japan,0,59
-1994,Sweden,0,84
 1994,Canada,0,95
+1994,China,0,24
 1994,France,0,98
-1994,Italy,0,104
 1994,Germany,0,112
+1994,Great Britain,0,32
+1994,Hungary,0,16
+1994,Italy,0,104
+1994,Japan,0,59
+1994,Netherlands,0,21
+1994,Poland,0,28
 1994,Russia,0,113
+1994,Spain,0,13
+1994,Sweden,0,84
 1994,United States,0,147
-1996,Poland,165,0
-1996,Sweden,177,0
-1996,Hungary,213,0
-1996,Netherlands,239,0
-1996,Spain,289,0
-1996,China,294,0
-1996,Great Britain,300,0
-1996,France,301,0
-1996,Canada,304,0
-1996,Japan,307,0
-1996,Italy,340,0
-1996,Russia,391,0
 1996,Australia,417,0
+1996,Canada,304,0
+1996,China,294,0
+1996,France,301,0
 1996,Germany,466,0
+1996,Great Britain,300,0
+1996,Hungary,213,0
+1996,Italy,340,0
+1996,Japan,307,0
+1996,Netherlands,239,0
+1996,Poland,165,0
+1996,Russia,391,0
+1996,Spain,289,0
+1996,Sweden,177,0
 1996,United States,647,0
-1998,Spain,0,12
-1998,Hungary,0,17
-1998,Netherlands,0,22
 1998,Australia,0,23
-1998,Great Britain,0,34
-1998,Poland,0,39
-1998,China,0,57
-1998,Sweden,0,99
-1998,France,0,106
-1998,Italy,0,113
-1998,Russia,0,122
-1998,Germany,0,125
 1998,Canada,0,144
+1998,China,0,57
+1998,France,0,106
+1998,Germany,0,125
+1998,Great Britain,0,34
+1998,Hungary,0,17
+1998,Italy,0,113
 1998,Japan,0,156
+1998,Netherlands,0,22
+1998,Poland,0,39
+1998,Russia,0,122
+1998,Spain,0,12
+1998,Sweden,0,99
 1998,United States,0,186
-2000,Sweden,150,0
-2000,Hungary,178,0
-2000,Poland,187,0
-2000,Netherlands,231,0
-2000,Japan,266,0
-2000,China,271,0
-2000,Canada,294,0
-2000,Great Britain,310,0
-2000,Spain,321,0
-2000,France,337,0
-2000,Italy,361,0
-2000,Germany,422,0
-2000,Russia,435,0
-2000,United States,586,0
 2000,Australia,617,0
-2002,Spain,0,7
+2000,Canada,294,0
+2000,China,271,0
+2000,France,337,0
+2000,Germany,422,0
+2000,Great Britain,310,0
+2000,Hungary,178,0
+2000,Italy,361,0
+2000,Japan,266,0
+2000,Netherlands,231,0
+2000,Poland,187,0
+2000,Russia,435,0
+2000,Spain,321,0
+2000,Sweden,150,0
+2000,United States,586,0
 2002,Australia,0,25
+2002,Canada,0,150
+2002,China,0,66
+2002,France,0,114
+2002,Germany,0,157
+2002,Great Britain,0,49
 2002,Hungary,0,25
+2002,Italy,0,109
+2002,Japan,0,103
 2002,Netherlands,0,27
 2002,Poland,0,27
-2002,Great Britain,0,49
-2002,China,0,66
-2002,Sweden,0,102
-2002,Japan,0,103
-2002,Italy,0,109
-2002,France,0,114
-2002,Canada,0,150
 2002,Russia,0,151
-2002,Germany,0,157
+2002,Spain,0,7
+2002,Sweden,0,102
 2002,United States,0,202
-2004,Sweden,115,0
-2004,Poland,194,0
-2004,Hungary,209,0
-2004,Netherlands,210,0
-2004,Canada,263,0
-2004,Great Britain,264,0
-2004,Japan,306,0
-2004,France,308,0
-2004,Spain,317,0
-2004,Italy,364,0
-2004,China,384,0
-2004,Germany,441,0
-2004,Russia,446,0
 2004,Australia,470,0
+2004,Canada,263,0
+2004,China,384,0
+2004,France,308,0
+2004,Germany,441,0
+2004,Great Britain,264,0
+2004,Hungary,209,0
+2004,Italy,364,0
+2004,Japan,306,0
+2004,Netherlands,210,0
+2004,Poland,194,0
+2004,Russia,446,0
+2004,Spain,317,0
+2004,Sweden,115,0
 2004,United States,533,0
-2006,Spain,0,16
-2006,Hungary,0,19
-2006,Netherlands,0,33
-2006,Great Britain,0,39
 2006,Australia,0,40
-2006,Poland,0,45
+2006,Canada,0,191
 2006,China,0,73
 2006,France,0,82
-2006,Sweden,0,106
-2006,Japan,0,110
 2006,Germany,0,155
-2006,Russia,0,174
+2006,Great Britain,0,39
+2006,Hungary,0,19
 2006,Italy,0,179
-2006,Canada,0,191
+2006,Japan,0,110
+2006,Netherlands,0,33
+2006,Poland,0,45
+2006,Russia,0,174
+2006,Spain,0,16
+2006,Sweden,0,106
 2006,United States,0,204
-2008,Sweden,123,0
+2008,Australia,432,0
+2008,Canada,332,0
+2008,China,599,0
+2008,France,309,0
+2008,Germany,420,0
+2008,Great Britain,304,0
 2008,Hungary,171,0
+2008,Italy,333,0
+2008,Japan,332,0
 2008,Netherlands,237,0
 2008,Poland,257,0
-2008,Spain,284,0
-2008,Great Britain,304,0
-2008,France,309,0
-2008,Canada,332,0
-2008,Japan,332,0
-2008,Italy,333,0
-2008,Germany,420,0
-2008,Australia,432,0
 2008,Russia,454,0
+2008,Spain,284,0
+2008,Sweden,123,0
 2008,United States,588,0
-2008,China,599,0
-2010,Hungary,0,15
-2010,Spain,0,18
-2010,Netherlands,0,32
 2010,Australia,0,40
-2010,Poland,0,46
-2010,Great Britain,0,52
-2010,China,0,86
-2010,Japan,0,91
-2010,Sweden,0,101
-2010,France,0,104
-2010,Italy,0,109
-2010,Germany,0,149
-2010,Russia,0,175
 2010,Canada,0,201
+2010,China,0,86
+2010,France,0,104
+2010,Germany,0,149
+2010,Great Britain,0,52
+2010,Hungary,0,15
+2010,Italy,0,109
+2010,Japan,0,91
+2010,Netherlands,0,32
+2010,Poland,0,46
+2010,Russia,0,175
+2010,Spain,0,18
+2010,Sweden,0,101
 2010,United States,0,212
-2012,Sweden,133,0
-2012,Hungary,152,0
-2012,Netherlands,173,0
-2012,Poland,210,0
+2012,Australia,404,0
 2012,Canada,273,0
-2012,Spain,278,0
+2012,China,375,0
+2012,France,324,0
+2012,Germany,383,0
+2012,Great Britain,530,0
+2012,Hungary,152,0
 2012,Italy,281,0
 2012,Japan,291,0
-2012,France,324,0
-2012,China,375,0
-2012,Germany,383,0
-2012,Australia,404,0
+2012,Netherlands,173,0
+2012,Poland,210,0
 2012,Russia,430,0
-2012,Great Britain,530,0
+2012,Spain,278,0
+2012,Sweden,133,0
 2012,United States,530,0
-2014,Hungary,0,16
-2014,Spain,0,20
-2014,Netherlands,0,39
-2014,Great Britain,0,53
-2014,Poland,0,58
 2014,Australia,0,60
+2014,Canada,0,217
 2014,China,0,62
-2014,Sweden,0,99
 2014,France,0,107
+2014,Germany,0,151
+2014,Great Britain,0,53
+2014,Hungary,0,16
 2014,Italy,0,110
 2014,Japan,0,111
-2014,Germany,0,151
+2014,Netherlands,0,39
+2014,Poland,0,58
 2014,Russia,0,213
-2014,Canada,0,217
+2014,Spain,0,20
+2014,Sweden,0,99
 2014,United States,0,223
-2016,Hungary,154,0
-2016,Sweden,164,0
-2016,Poland,242,0
-2016,Netherlands,249,0
-2016,Russia,286,0
-2016,Italy,312,0
-2016,Spain,313,0
+2016,Australia,431,0
 2016,Canada,321,0
-2016,Japan,346,0
-2016,United Kingdom,374,0
 2016,China,404,0
 2016,France,410,0
-2016,Australia,431,0
 2016,Germany,441,0
+2016,Hungary,154,0
+2016,Italy,312,0
+2016,Japan,346,0
+2016,Netherlands,249,0
+2016,Poland,242,0
+2016,Russia,286,0
+2016,Spain,313,0
+2016,Sweden,164,0
+2016,Great Britain,374,0
 2016,United States,567,0
