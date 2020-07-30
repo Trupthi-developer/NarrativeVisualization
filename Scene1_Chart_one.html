@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='https://d3js.org/d3.v5.js'></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <body onload="init()">
+  <style>
+  #olympicParticipation {
+     border:2px solid #000;
+     width:960px;
+     height:550px;
+    }
+    .country {
+     fill: #ccc;
+     stroke: #fe6;
+     stroke-width: .5px;
+     stroke-linejoin: round;
+    }
+
+    div.tooltip {
+      color: #222;
+      background: #fff;
+      padding: .5em;
+      text-shadow: #f5f5f5 0 1px 0;
+      border-radius: 2px;
+      box-shadow: 0px 0px 2px 0px #a6a6a6;
+      opacity: 0.9;
+      position: absolute;
+    }
+
+
+</style>
+  </style>
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <h1 align=center> Olympics World Participation </h1>
+
+  <h2 align=center font-style="Comic-sans">Sneak peak on Olympics partitipation and medal distribution of countries over 120 years.
+  </h2>
+
+
+<p> This Visualization below gives Olympics overall participation. Many countries have participated over time the below geomap shows the countries that have participated in Olympics
+</p>
+
+<div id="OlympicParticipation"></div>
+
+  <p> This Visualization below gives the end-user an understanding of World's Olympic Participation over the past 120 years. Many countries have participated over time, and seeing a trend who were the top 15 participants over the years
+    would give us an understanding as to who are the top contenders in Olympics and have the chance of getting more medals.
+  </p>
+
+  </head>
+<button type="button" align="top" onclick="raceBarChartTotalDistribution()">Replay</button>
+<div id="totalparticipationTrend"></div>
+<p>
+  As you can see above, as the year passes by the countries's particpation changes
+</p>
+
+<script type="text/javascript">
+
+async function init() {
+
+  //Display geomap with Olympic participants from accross the World
+  var executeCharttwo = olympicParticipantDistribution ();
+
+  //Display the first chart - Total partitipation for all event types in Olympics from 1900 - 2016
+  var executeChartOne = raceBarChartTotalDistribution();
+
+}
+
+//Code for Event based distribution
+async function olympicParticipantDistribution () {
+
+ var format = d3.format(",");
+ var margin = {top: 10, right: 70, bottom: 10, left: 0},
+            width = 1260 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+var path = d3.geoPath();
+
+var tooltip = d3.select("#OlympicParticipation").append("div")
+                .attr("class", "tooltip")
+                .style("display","none");
+
+var svg = d3.select("#OlympicParticipation")
+            .append("svg")
+            .attr('class', 'geoOlympicMapping')
+            .attr("width", width)
+            .attr("height", height)
+
+var projection = d3.geoMercator()
+                   .scale(130)
+                  .translate( [width / 2, height / 1.5]);
+
+var path = d3.geoPath().projection(projection);
+
+
+const geoMapCoOrddata = await d3.json("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/master/world_countries.json")
+const worldOlympicParticipants = await d3.csv("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/master/worldOlympicParticipants.csv")
+
+{
+  var participationById = {};
+
+  //var color = d3.scaleOrdinal()
+    //          .domain([d3.map(worldOlympicParticipants, d=> d.Participants)])
+      //        .range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"])
+
+      var color = d3.scaleThreshold()
+        .domain(["1", "10", "50", "250","550", "750", "1500", "2500", "5000", "7500", "10000"])
+        //.range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"])
+        .range(d3.schemeSpectral[11])
+
+      /*  legend({
+            color: d3.scaleOrdinal(["<10", "10-50", "51-149", "150-450","451-750", "750-1500", "1501-2500", "2501-5000", "5001-7500", "7501-10000" ], d3.schemeSpectral[10]),
+            title: "Participants",
+            tickSize: 0
+          })
+*/
+
+  worldOlympicParticipants.forEach((item, i) => { participationById[item.ID] = +item.Participants; });
+  geoMapCoOrddata.features.forEach((d, i) => { d.participation = participationById[d.id]; });
+
+  svg.append("g")
+      .attr("class", "participatingCountries")
+    .selectAll("path")
+      .data(geoMapCoOrddata.features)
+    .enter().append("path")
+      .attr("d", path)
+      .style("fill", function(d) { return (typeof(participationById[d.id]) != 'undefined') ? color(participationById[d.id]): "rgb(211,211,211)"; })
+      .style('stroke', 'white')
+      .style('stroke-width', 1.5)
+      .style("opacity",0.8)
+
+        .style("stroke","white")
+        .style('stroke-width', 0.3)
+        .on('mouseover',function(d){
+
+          //var mouse = d3.mouse(svg.node()).map(function(d) { return d.participation; } );
+          var parcipCnt = (typeof(d.participation)!= 'undefined') ? d.participation : 0;
+
+          tooltip
+            .attr("style", "left:"+(event.pageX)+"px;top:"+event.pageY+"px")
+            .style("display","block")
+            .style("cursor","pointer")
+            .html("<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "<strong>Participants: </strong><span class='details'>" + parcipCnt +"</span>")
+
+          d3.select(this)
+            .style("display","inline")
+            .style("opacity", 1)
+            .style("stroke","white")
+            .style("stroke-width",3);
+        })
+        .on('mouseout', function(d){
+
+          d3.select(this)
+            .style("opacity", 0.8)
+            .style("stroke","white")
+            .style("stroke-width",0.3);
+
+            tooltip.style("display", "none")
+        });
+
+  svg.append("path")
+      .datum(topojson.mesh(geoMapCoOrddata.features, function(a, b) { return a.ID !== b.ID; }))
+      .attr("class", "names")
+      .attr("d", path);
+
+    }
+}
+//Code for race chart display
+async function raceBarChartTotalDistribution() {
+
+  d3.select("#RaceBarChart").remove();
+
+  var n = 15;
+  var barSize = 48
+  var tickDuration = 500;
+
+
+
+  // set the dimensions and margins of the graph
+  var margin = {top: 20, right: 30, bottom: 40, left: 90},
+  width = 960 - margin.left - margin.right,
+  height = margin.top + barSize * n + margin.bottom
+  //600 - margin.top - margin.bottom;
+
+
+  // append the svg object to the body of the page
+  var svg = d3.selectAll("#totalparticipationTrend")
+          .append("svg")
+          .attr("id","RaceBarChart")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + margin.right + "," + margin.top + ")");
+
+          // Show top 15 countries
+
+          var url = "https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/master/TotalParticipationByCountry.csv"
+
+          const TotalParticipationByCountry = await d3.csv(url);
+
+          //margin = ({top: 16, right: 6, bottom: 6, left: 0})
+
+          xscale = d3.scaleLinear([0, 750], [1,width-margin.right])
+
+          yscale = d3.scaleBand()
+            .domain(d3.range(n + 1))
+            .rangeRound([margin.top, margin.top + barSize * (n + 1 + 0.1)])
+            .padding(0.1)
+
+           //Build Bars for chart
+           function buildBars(svg) {
+            let bar = svg.append("g")
+                .attr("fill-opacity", 0.6)
+              .selectAll("rect");
+
+             return ([Year, TotalParticipationByCountry], transition) => bar = bar
+              .data(TotalParticipationByCountry.slice(0, n), d => d.Country)
+              .join(
+                enter => enter.append("rect")
+                  .attr("fill", d=>color(d.Country))
+                  .attr("height", yscale.bandwidth())
+                  .attr("x", xscale(0))
+                  .attr("y", d => yscale((prev.get(d) || d).RankPerYear))
+                  .attr("width", d => xscale((prev.get(d) || d).NumberOfParticipants) - xscale(0)),
+                update => update,
+                exit => exit.transition(transition).remove()
+                  .attr("y", d => yscale((next.get(d) || d).RankPerYear))
+                  .attr("width", d => xscale((next.get(d) || d).NumberOfParticipants) - xscale(0))
+              )
+              .call(bar => bar.transition(transition)
+                .attr("y", d => yscale(d.RankPerYear))
+                .attr("width", d => xscale(d.NumberOfParticipants) - xscale(0)));
+            }
+
+
+            //Build Labels for chart
+            function chartLabels(svg) {
+                let label = svg.append("g")
+                    .style("font", "bold 12px var(--sans-serif)")
+                    .style("font-variant-numeric", "tabular-nums")
+                    .attr("text-anchor", "end")
+                  .selectAll("text");
+
+                return ([Year, TotalParticipationByCountry], transition) => label = label
+                  .data(TotalParticipationByCountry.slice(0, n), d => d.Country)
+                  .join(
+                    enter => enter.append("text")
+                      .attr("transform", d => `translate(${xscale((prev.get(d) || d).NumberOfParticipants)},${yscale((prev.get(d) || d).RankPerYear)})`)
+                      .attr("y", yscale.bandwidth() / 2)
+                      .attr("x", -6)
+                      .attr("dy", "-0.25em")
+                      .text(d => d.Country)
+                      .call(text => text.append("tspan")
+                        .attr("fill-opacity", 0.7)
+                        .attr("font-weight", "normal")
+                        .attr("x", -6)
+                        .attr("dy", "1.15em")),
+                    update => update,
+                    exit => exit.transition(transition).remove()
+                      .attr("transform", d => `translate(${xscale((next.get(d) || d).NumberOfParticipants)},${yscale((next.get(d) || d).RankPerYear)})`)
+                      .call(g => g.select("tspan").tween("text", d => textTween(d.NumberOfParticipants, (next.get(d) || d).RankPerYear)))
+                  )
+                  .call(bar => bar.transition(transition)
+                    .attr("transform", d => `translate(${xscale(d.NumberOfParticipants)},${yscale(d.RankPerYear)})`)
+                    .call(g => g.select("tspan").tween("text", d => textTween((prev.get(d) || d).NumberOfParticipants, d.NumberOfParticipants))));
+                  }
+              //Interpolate Numbers during transition chart
+              function textTween(a, b) {
+                const i = d3.interpolateNumber(a, b);
+                return function(t) {
+                  this.textContent = formatNumber(i(t));
+                };
+              }
+
+              formatNumber = d3.format(",d")
+              formatDate = d3.utcFormat("%Y")
+
+             //Build Axis for chart
+              function buildaxis(svg) {
+                const g = svg.append("g")
+                    .attr("transform", `translate(0,70)`);
+
+                const axis = d3.axisTop(xscale)
+                    .ticks(width / 160)
+                    .tickSizeOuter(0)
+                    .tickSizeInner(-barSize * (n + yscale.padding()));
+
+                return (_, transition) => {
+                  g.transition(transition).call(axis);
+                  g.select(".tick:first-of-type text").remove();
+                  g.selectAll(".tick:not(:first-of-type) line").attr("stroke", "white");
+                  g.select(".domain").remove();
+                };
+              }
+              //Ticker for chart, based on year
+              function chartTicker(svg) {
+                const now = svg.append("text")
+                    .style("font", `bold ${barSize}px var(--sans-serif)`)
+                    .style("font-size","xxx-large")
+                    .style("font-variant-numeric", "proportional-nums")
+                    .attr("text-anchor", "end")
+                    .attr("x", width - 6)
+                    .attr("y", margin.top + barSize * (n))
+                    .attr("dy", "0.32em")
+                    .text(ParticipationByYear[0][0]);
+
+                return ([Year], transition) => {
+                  transition.end().then(() => now.text(Year));
+                };
+              }
+
+              //Build Color scale for chart
+              const categoryByName = new Map(TotalParticipationByCountry.map(d => [d.Country, d.SubRegion]))
+              var color =  d3.scaleOrdinal()
+                                  .domain(Array.from(categoryByName.values()))
+                                  .range(["#4e79a7","#f28e2c","#e15759","#76b7b2","#59a14f","#edc949","#af7aa1","#ff9da7","#9c755f","#bab0ab"]);
+
+                  var vals=[];
+                  for(var item of TotalParticipationByCountry){
+                      vals.push(item.Country);
+                    }
+                  ParticipateCountrynames = new Set(vals);
+
+                  //Build temp compare array for chart
+                  //Array of Objects - By year
+                  var tempDateVal  = Array.from(d3.nest()
+                    .key(function(d) { return d.Year})
+                    .rollup(function (v) { return v.map(function (d) { return {
+                    Country:d.Country,
+                    NumberOfParticipants:+d.NumberOfParticipants,
+                    RankPerYear:+d.RankPerYear
+                      }; })})
+                    .entries(TotalParticipationByCountry));
+
+                   //Array of Arrays
+                   var ParticipationByYear = tempDateVal.map(Object.values);
+
+                   //Build temp compare array for chart
+                   //Array of Objects - By Country
+                   var tempCountryVal  = Array.from(d3.nest()
+                     .key(function(d) { return d.Country})
+                     .rollup(function (v) { return v.map(function (d) { return {
+                     Country:d.Country,
+                     NumberOfParticipants:+d.NumberOfParticipants,
+                     RankPerYear:+d.RankPerYear
+                       }; })})
+                     .entries(TotalParticipationByCountry));
+
+                    //Array of Arrays
+                    var CountryNameFrame = tempCountryVal.map(Object.values);
+
+                   // Check previous Status of the Country's Participation
+                   prev = new Map(CountryNameFrame.map(([, TotalParticipationByCountry]) => d3.pairs(TotalParticipationByCountry, (a, b) => [b, a])))
+                   // Check next Status of the Country's Participation
+                   next = new Map(CountryNameFrame.map(([, TotalParticipationByCountry]) => d3.pairs(TotalParticipationByCountry)));
+
+  //Call this function on init() and also on replay
+   {     //Build constants for calling function to plot horizontal barS with transition
+       const updateBars = buildBars(svg);
+       const updateAxis = buildaxis(svg);
+       const updateLabels = chartLabels(svg);
+       const updateTicker = chartTicker(svg);
+
+       //Define Transition for each plotting
+       for (const ParticipationYear of ParticipationByYear) {
+         const transition = svg.transition()
+             .duration(tickDuration)
+             .ease(d3.easeLinear);
+
+         // Extract the top bar’s value for display in Chart
+         xscale.domain([0, ParticipationYear[1][0].NumberOfParticipants]);
+
+         updateAxis(ParticipationYear, transition);
+         updateBars(ParticipationYear, transition);
+         updateLabels(ParticipationYear, transition);
+         updateTicker(ParticipationYear, transition);
+
+         //invalidation.then(() => svgViz.interrupt());
+         await transition.end();
+       }
+     }
+}// End of race chart
+//
+</script>
+</body>
+</html>
