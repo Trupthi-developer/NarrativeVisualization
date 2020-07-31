@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='https://d3js.org/d3.v5.js'></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <body onload="init()">
+    <style>
+      div.tooltip {
+        color: #222;
+        background: #fff;
+        padding: .5em;
+        text-shadow: #f5f5f5 0 1px 0;
+        border-radius: 2px;
+        box-shadow: 0px 0px 2px 0px #a6a6a6;
+        opacity: 0.9;
+        position: absolute;
+      }
+    </style>
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <h1 align=center> Event Based Participation </h1>
+
+  <h2 align=center font-style="Comic-sans">Sneak peak on Olympics partitipation for the identified top 15 Countries.
+  </h2>
+
+
+<p> This Visualization below gives Olympics event based participation. </p>
+<!-- Initialize a select button -->
+<select id="selectYear"></select>
+<div id="EventOlympicParticipation"></div>
+
+
+<div id="SportOlympicParticipation" align=right></div>
+<button type="button" align="right" onclick="changeEvent()" value="Summer">Summer</button>
+<button type="button" align="right" onclick="changeEvent()" value="Winter">Winter</button>
+<p> Which sport is the country specialized in ?
+</p>
+
+<script type="text/javascript">
+
+async function init() {
+
+  //Display Summer and Winter Event Olympic participants from the top 15 Countries identified in the first page
+  var executeChartone = EventOlympicParticipation ();
+
+  //Display the first chart - Total partitipation for all event types in Olympics from 1900 - 2016
+  var executeCharttwo = SportOlympicParticipationHeatMap();
+
+}
+
+// A function that update the color circle
+var changeEvent = function(){
+    var eventType = d3.select(this).property('value');
+    console.log(d3.select(this).property('value'));
+    SportOlympicParticipationHeatMap.plotHeatMapSportByEvent(eventType);
+  }
+
+//Code for Event based distribution
+async function EventOlympicParticipation () {
+
+ var format = d3.format(",");
+ // var margin = {top: 50, right: 40, bottom: 50, left: 80},
+ //            width = 750 - margin.left - margin.right,
+ //            height = 450 - margin.top - margin.bottom;
+var margin = {top: 50, right: 40, bottom: 50, left: 80},
+              width = 850 - margin.left - margin.right,
+              height = 550 - margin.top - margin.bottom;
+var tooltip = d3.select("#sideBySideComparedEvent").append("div")
+                .attr("class", "tooltip")
+                .style("display","none");
+
+var svg = d3.selectAll("#EventOlympicParticipation")
+            .append("svg")
+            .attr('class', 'sideBySideComparedEvent')
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("class","plotSideBySideBar")
+            .attr("transform", "translate("+margin.left+","+ margin.bottom+")");
+
+var dataTime = [1900,1904,1906,1912,1920,1924,1928,1932,1936,1948,1952,1956,1960,1964,1968,1972,1976,1980,1984,1984,1988,1992,1994,1996,1998,2000,2002,2004,2006,2008,2010,2012,2014,2016];
+
+const top15EventBasedParticipation = await d3.csv("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/master/Top15ParticipationByEvents.csv")
+
+var legend = svg => {
+                        const g = svg.attr("transform", `translate(${width-margin.left},0)`)
+                            .attr("text-anchor", "end")
+                            .attr("font-family", "sans-serif")
+                            .attr("font-size", 10)
+                          .selectAll("g")
+                          .attr("class","colorLegend")
+                          .data(color.domain().slice().reverse())
+                          .join("g")
+                            .attr("transform", (d, i) => `translate(0,${i * 20})`);
+
+                        g.append("rect")
+                            .attr("x", -19)
+                            .attr("width", 19)
+                            .attr("height", 19)
+                            .attr("fill", color);
+
+                        g.append("text")
+                            .attr("x", 45)
+                            .attr("y", 9.5)
+                            .attr("dy", "0.35em")
+                            .text(d => d);
+                      }
+
+    var groupByKey = "Country";
+    var eventKeys = ['Summer', 'Winter'];
+    //Build Color scale for chart
+    var color =  d3.scaleOrdinal()
+                        .domain(eventKeys)
+                        .range(["#edc949","#af7aa1"]);
+
+     //Build and update bars
+     function plotEventByYear(yearValue) {
+            var byYearDataSet= top15EventBasedParticipation.filter(function(d){ return d.Year == yearValue })
+
+            //svg.select("#plotSideBySideBar").remove();
+            svg.select("#allBars").remove();
+            svg.select("#x-axis").remove();
+            svg.select("#y-axis").remove();
+
+            var maxDomainSummer = d3.max(byYearDataSet, d=>+d.Summer)
+            var maxDomainWinter = d3.max(byYearDataSet, d=>+d.Winter)
+
+
+
+            var xScaleCountry = d3.scaleBand()
+                                  .rangeRound([0, width - margin.right])
+                                  .paddingInner(0.1)
+
+            var xScaleEvent = d3.scaleBand()
+                              .domain(eventKeys)
+                              .padding(0.05)
+
+            var yScaleParticipants = d3.scaleLinear()
+                                     .rangeRound([height - margin.right, margin.top])
+
+             xScaleCountry.domain(byYearDataSet.map(d => d[groupByKey]))
+             xScaleEvent.rangeRound([0, xScaleCountry.bandwidth()])
+             yScaleParticipants.domain([0, d3.max(byYearDataSet, function(d){ return (maxDomainSummer != 0)? +d.Summer : +d.Winter})]).nice()
+
+            var xAxis = d3.axisBottom(xScaleCountry).tickSizeOuter(0);
+            var yAxis = d3.axisLeft(yScaleParticipants).tickFormat(d3.format(".2s"));
+
+
+            //Plot GroupChart
+            svg.selectAll("g")
+                .attr("class","allBars")
+                .data(byYearDataSet)
+                .join("g")
+                  .attr("transform", d => `translate(${xScaleCountry(d[groupByKey])},0)`)
+                  .attr("class","barChart")
+                .selectAll("rect")
+                .data(d => eventKeys.map(key => ({key, value: d[key]})))
+                .join("rect")
+                  .transition().duration(250)
+                  .attr("x", d => xScaleEvent(d.key))
+                  .attr("y", d => yScaleParticipants(d.value))
+                  .attr("width", xScaleEvent.bandwidth())
+                  .attr("height", d => yScaleParticipants(0) - yScaleParticipants(d.value))
+                  .attr("fill", d => color(d.key));
+
+              // Add the X Axis
+              svg.append("g")
+                  .attr("class", "x-axis")
+                  .attr("transform", `translate(0,${height-margin.bottom+10})`)
+                  .call(xAxis)
+                  .selectAll("text")
+                  .attr("transform","translate(-10,10)rotate(-45)");
+
+
+              //Add label for x-axis
+              // text label for the x axis
+              svg.append("text")
+                  .attr("class", "x-axisLabel")
+                  .attr("transform",
+                        "translate(" + (width - margin.left) + " ," +
+                                       (height + margin.top) + ")")
+                  .style("text-anchor", "middle")
+                  .text("Country");
+
+              // Add the Y Axis
+              svg.append("g")
+                  .attr("class", "y-axis")
+                  .call(yAxis);
+
+              // text label for the y axis
+              svg.append("text")
+                  .attr("class", "y-axisLabel")
+                  .attr("transform", "rotate(-90)")
+                  .attr("y", 0 - margin.left)
+                  .attr("x",0 - (height/2))
+                  .attr("dy", "1em")
+                  .style("text-anchor", "middle")
+                  .text("Number of Participants");
+
+              svg.append("g")
+                  .attr("class","legend")
+                  .call(legend);
+              // Remove old ones
+              //svg.exit().remove();
+
+        }// End of race chart
+
+  // Handler for dropdown value change
+   var dropdownChange = function() {
+      var newYear = d3.select(this).property('value');
+      plotEventByYear(newYear);
+    };
+
+    var yearDropDown = d3.select("#selectYear")
+                          .selectAll("myoptions")
+                         	.data(dataTime)
+                          .enter()
+                        	.append('option')
+                          .attr("pointer-events", "none")
+                          .text(function (d) { return d; }) // text showed in the menu
+                          .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+    var yearValue = d3.select("#selectYear")
+                      .on("change",dropdownChange );
+
+    plotEventByYear("1988");
+}
+
+
+// Second Chart -
+
+  // Heat Map for the most popular SportOlympicParticipation
+  async function SportOlympicParticipationHeatMap(){
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 50, right: 40, bottom: 60, left: 80},
+      width = 850 - margin.left - margin.right,
+      height = 650 - margin.top - margin.bottom;
+
+    var groupByKey = "Country";
+    var eventKeys = "SportType";
+
+    // append the svg object to the body of the page
+    var svg = d3.selectAll("#SportOlympicParticipation")
+            .append("svg")
+            .attr("id","heatMapCanvas")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("class","heatMapSpace")
+            .attr("transform", `translate(${margin.left},${margin.bottom-40})`);
+
+    // create a tooltip
+    var tooltip = d3.select("#SportOlympicParticipation")
+      .append("div")
+      .attr("class","tooltip")
+    // Get content for the heatMap
+    // Build color scale
+    var myColorSummer = d3.scaleLinear()
+                  .range(["white", "#edc949"])
+                  .domain([1,250])
+
+    var myColorWinter = d3.scaleLinear()
+                  .range(["white", "#af7aa1"])
+                  .domain([1,250])
+    var url = "https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/master/MostPopularSportAnalysisDatasetHeatMap.csv"
+    const SportTypeTop15Distribution = await d3.csv(url);
+
+    //Build and heatMap
+    var plotHeatMapSportByEvent = function(EventValue) {
+           var byEventDataSet= SportTypeTop15Distribution.filter(function(d){ return d.Event == EventValue })
+           //svg.select("#plotSideBySideBar").remove();
+           svg.select("#allHeatMap").remove();
+           svg.select("#secondx-axis").remove();
+           svg.select("#secondy-axis").remove();
+
+           var xScaleSport = d3.scaleBand()
+                                 .domain(byEventDataSet.map(d => d[eventKeys]))
+                                 .rangeRound([0, width])
+                                 .paddingInner(0.01)
+
+
+           var yScaleCountry = d3.scaleBand()
+                                       .domain(byEventDataSet.map(d => d[groupByKey]))
+                                       .rangeRound([height, margin.top])
+                                       .paddingInner(0.01)
+
+           var mouseover = function(d) {
+                tooltip
+                  .attr("style", "left:"+(event.pageX)+"px;top:"+event.pageY+"px")
+                  .style("cursor","pointer")
+                  .style("display","block")
+                  .html("<strong>Number of Participations: </strong><span class='details'>" + d.NumberOfParticipations + "<br></span>" )
+
+              }
+           var mousemove = function(d) {
+                tooltip.style("opacity", 1)
+              }
+           var mouseleave = function(d) {
+            tooltip.style("opacity", 0)
+                  .style("display","none")
+              }
+
+           var xAxis = d3.axisBottom(xScaleSport);
+           var yAxis = d3.axisLeft(yScaleCountry);
+
+
+           // add the squares
+           svg.selectAll()
+             .data(byEventDataSet, function(d) {return d.SportType+':'+d.Country;})
+             .enter()
+             .append("rect")
+               .attr("x", function(d) { return xScaleSport(d.SportType) })
+               .attr("y", function(d) { return yScaleCountry(d.Country) })
+               .attr("width", xScaleSport.bandwidth() )
+               .attr("height", yScaleCountry.bandwidth() )
+               .style("fill", function(d) { return (EventValue == "Summer") ? myColorSummer(d.NumberOfParticipations) : myColorWinter(d.NumberOfParticipations)} )
+             .on("mouseover", mouseover)
+             .on("mousemove", mousemove)
+             .on("mouseleave", mouseleave)
+
+
+             // Add the X Axis
+             svg.append("g")
+                 .attr("class", "secondx-axis")
+                 .attr("transform", `translate(0,${height+1})`)
+                 .call(xAxis)
+                 .selectAll("text")
+                 .attr("transform","translate(-10,10)rotate(-25)");
+
+
+             // text label for the x axis
+             svg.append("text")
+                 .attr("class", "secondx-axisLabel")
+                 .attr("transform",
+                       "translate(" + (width - margin.left - margin.right) + " ," +
+                                      (height +  margin.bottom ) + ")")
+                 .style("text-anchor", "middle")
+                 .text("Sport Types");
+
+             // Add the Y Axis
+             svg.append("g")
+                 .attr("class", "secondy-axis")
+                 .call(yAxis);
+
+             // text label for the y axis
+             svg.append("text")
+                 .attr("class", "secondy-axisLabel")
+                 .attr("transform", "rotate(-90)")
+                 .attr("y", 0 - margin.left)
+                 .attr("x",0 - (height/2))
+                 .attr("dy", "1em")
+                 .style("text-anchor", "middle")
+                 .text("Country");
+
+
+        }
+
+    var initialMap = plotHeatMapSportByEvent("Summer");
+
+  }
+</script>
+</body>
+</html>
