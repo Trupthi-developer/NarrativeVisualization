@@ -1,18 +1,18 @@
 Event,Country,SportType,NumberOfParticipations
-Summer,United States,Art Competitions,289
-Summer,Germany,Art Competitions,227
-Summer,Great Britain,Art Competitions,177
-Summer,Netherlands,Art Competitions,144
-Summer,Italy,Art Competitions,125
-Summer,Japan,Art Competitions,108
-Summer,Poland,Art Competitions,104
-Summer,Sweden,Art Competitions,57
-Summer,Canada,Art Competitions,28
-Summer,Hungary,Art Competitions,28
-Summer,China,Art Competitions,5
-Summer,Russia,Art Competitions,4
-Summer,Spain,Art Competitions,3
-Summer,Australia,Art Competitions,2
+Summer,United States,Art Contest,289
+Summer,Germany,Art Contest,227
+Summer,Great Britain,Art Contest,177
+Summer,Netherlands,Art Contest,144
+Summer,Italy,Art Contest,125
+Summer,Japan,Art Contest,108
+Summer,Poland,Art Contest,104
+Summer,Sweden,Art Contest,57
+Summer,Canada,Art Contest,28
+Summer,Hungary,Art Contest,28
+Summer,China,Art Contest,5
+Summer,Russia,Art Contest,4
+Summer,Spain,Art Contest,3
+Summer,Australia,Art Contest,2
 Summer,United States,Athletics,2527
 Summer,Great Britain,Athletics,1719
 Summer,Germany,Athletics,1629
