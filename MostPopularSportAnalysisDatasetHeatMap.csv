@@ -1,0 +1,463 @@
+Event,Country,SportType,NumberOfParticipations
+Summer,United States,Art Competitions,289
+Summer,Germany,Art Competitions,227
+Summer,Great Britain,Art Competitions,177
+Summer,Netherlands,Art Competitions,144
+Summer,Italy,Art Competitions,125
+Summer,Japan,Art Competitions,108
+Summer,Poland,Art Competitions,104
+Summer,Sweden,Art Competitions,57
+Summer,Canada,Art Competitions,28
+Summer,Hungary,Art Competitions,28
+Summer,China,Art Competitions,5
+Summer,Russia,Art Competitions,4
+Summer,Spain,Art Competitions,3
+Summer,Australia,Art Competitions,2
+Summer,United States,Athletics,2527
+Summer,Great Britain,Athletics,1719
+Summer,Germany,Athletics,1629
+Summer,Italy,Athletics,817
+Summer,Canada,Athletics,805
+Summer,Australia,Athletics,729
+Summer,Sweden,Athletics,692
+Summer,Poland,Athletics,682
+Summer,Japan,Athletics,618
+Summer,Hungary,Athletics,560
+Summer,Spain,Athletics,557
+Summer,Russia,Athletics,544
+Summer,China,Athletics,405
+Summer,Netherlands,Athletics,356
+Summer,China,Badminton,119
+Summer,Japan,Badminton,68
+Summer,Great Britain,Badminton,64
+Summer,Germany,Badminton,40
+Summer,Australia,Badminton,39
+Summer,Canada,Badminton,36
+Summer,Sweden,Badminton,30
+Summer,Poland,Badminton,29
+Summer,United States,Badminton,27
+Summer,Netherlands,Badminton,24
+Summer,Russia,Badminton,22
+Summer,Spain,Badminton,10
+Summer,Hungary,Badminton,5
+Summer,Italy,Badminton,3
+Summer,Japan,Baseball,112
+Summer,Netherlands,Baseball,92
+Summer,Italy,Baseball,88
+Summer,United States,Baseball,88
+Summer,Australia,Baseball,68
+Summer,Canada,Baseball,48
+Summer,China,Baseball,24
+Summer,Spain,Baseball,20
+Summer,United States,Basketball,341
+Summer,Australia,Basketball,262
+Summer,China,Basketball,223
+Summer,Spain,Basketball,191
+Summer,Italy,Basketball,184
+Summer,Canada,Basketball,178
+Summer,Japan,Basketball,115
+Summer,Russia,Basketball,94
+Summer,Poland,Basketball,82
+Summer,Hungary,Basketball,61
+Summer,Germany,Basketball,58
+Summer,Great Britain,Basketball,37
+Summer,Sweden,Basketball,12
+Summer,United States,Boxing,248
+Summer,Great Britain,Boxing,223
+Summer,Germany,Boxing,190
+Summer,Italy,Boxing,175
+Summer,Canada,Boxing,141
+Summer,Poland,Boxing,137
+Summer,Australia,Boxing,125
+Summer,Hungary,Boxing,110
+Summer,Japan,Boxing,77
+Summer,Sweden,Boxing,77
+Summer,Spain,Boxing,72
+Summer,Netherlands,Boxing,65
+Summer,Russia,Boxing,64
+Summer,China,Boxing,50
+Summer,Germany,Canoeing,366
+Summer,United States,Canoeing,251
+Summer,Canada,Canoeing,215
+Summer,Hungary,Canoeing,215
+Summer,Poland,Canoeing,214
+Summer,Great Britain,Canoeing,201
+Summer,Australia,Canoeing,181
+Summer,Sweden,Canoeing,162
+Summer,Italy,Canoeing,136
+Summer,Spain,Canoeing,134
+Summer,China,Canoeing,76
+Summer,Japan,Canoeing,73
+Summer,Russia,Canoeing,69
+Summer,Netherlands,Canoeing,62
+Summer,Great Britain,Cycling,419
+Summer,Germany,Cycling,400
+Summer,United States,Cycling,361
+Summer,Italy,Cycling,348
+Summer,Netherlands,Cycling,310
+Summer,Australia,Cycling,302
+Summer,Canada,Cycling,201
+Summer,Poland,Cycling,174
+Summer,Spain,Cycling,173
+Summer,Sweden,Cycling,149
+Summer,Japan,Cycling,129
+Summer,Russia,Cycling,118
+Summer,China,Cycling,76
+Summer,Hungary,Cycling,76
+Summer,United States,Diving,203
+Summer,Germany,Diving,169
+Summer,Great Britain,Diving,164
+Summer,Sweden,Diving,118
+Summer,Canada,Diving,98
+Summer,Australia,Diving,88
+Summer,China,Diving,71
+Summer,Italy,Diving,69
+Summer,Japan,Diving,59
+Summer,Russia,Diving,41
+Summer,Spain,Diving,35
+Summer,Hungary,Diving,29
+Summer,Netherlands,Diving,25
+Summer,Poland,Diving,13
+Summer,Italy,Fencing,439
+Summer,United States,Fencing,411
+Summer,Hungary,Fencing,365
+Summer,Great Britain,Fencing,345
+Summer,Germany,Fencing,331
+Summer,Poland,Fencing,254
+Summer,Sweden,Fencing,149
+Summer,China,Fencing,138
+Summer,Canada,Fencing,135
+Summer,Russia,Fencing,125
+Summer,Netherlands,Fencing,123
+Summer,Japan,Fencing,101
+Summer,Australia,Fencing,89
+Summer,Spain,Fencing,86
+Summer,Great Britain,Figure Skating,17
+Summer,Sweden,Figure Skating,8
+Summer,Germany,Figure Skating,3
+Summer,United States,Figure Skating,3
+Summer,Russia,Figure Skating,1
+Summer,Germany,Football,304
+Summer,United States,Football,304
+Summer,Sweden,Football,253
+Summer,Italy,Football,239
+Summer,Japan,Football,225
+Summer,Australia,Football,166
+Summer,Spain,Football,163
+Summer,Great Britain,Football,160
+Summer,China,Football,136
+Summer,Hungary,Football,132
+Summer,Netherlands,Football,110
+Summer,Poland,Football,106
+Summer,Canada,Football,99
+Summer,Russia,Football,15
+Summer,United States,Gymnastics,382
+Summer,Germany,Gymnastics,322
+Summer,Italy,Gymnastics,314
+Summer,Great Britain,Gymnastics,300
+Summer,Hungary,Gymnastics,228
+Summer,Japan,Gymnastics,194
+Summer,Sweden,Gymnastics,152
+Summer,Canada,Gymnastics,120
+Summer,China,Gymnastics,116
+Summer,Spain,Gymnastics,110
+Summer,Poland,Gymnastics,100
+Summer,Netherlands,Gymnastics,91
+Summer,Australia,Gymnastics,89
+Summer,Russia,Gymnastics,84
+Summer,Germany,Handball,288
+Summer,Spain,Handball,207
+Summer,Hungary,Handball,205
+Summer,Sweden,Handball,166
+Summer,United States,Handball,142
+Summer,Russia,Handball,100
+Summer,China,Handball,81
+Summer,Poland,Handball,72
+Summer,Japan,Handball,66
+Summer,Australia,Handball,30
+Summer,Canada,Handball,28
+Summer,Great Britain,Handball,28
+Summer,Netherlands,Handball,15
+Summer,Germany,Hockey,461
+Summer,Great Britain,Hockey,425
+Summer,Netherlands,Hockey,422
+Summer,Australia,Hockey,385
+Summer,Spain,Hockey,368
+Summer,United States,Hockey,184
+Summer,Canada,Hockey,157
+Summer,Japan,Hockey,127
+Summer,China,Hockey,98
+Summer,Poland,Hockey,92
+Summer,Italy,Hockey,33
+Summer,Hungary,Hockey,15
+Summer,Sweden,Ice Hockey,11
+Summer,United States,Ice Hockey,11
+Summer,Canada,Ice Hockey,8
+Summer,Germany,Judo,130
+Summer,Japan,Judo,129
+Summer,Great Britain,Judo,110
+Summer,United States,Judo,105
+Summer,Australia,Judo,86
+Summer,China,Judo,82
+Summer,Netherlands,Judo,82
+Summer,Canada,Judo,80
+Summer,Italy,Judo,76
+Summer,Hungary,Judo,75
+Summer,Spain,Judo,74
+Summer,Poland,Judo,73
+Summer,Russia,Judo,71
+Summer,Sweden,Judo,27
+Summer,Germany,Rowing,885
+Summer,United States,Rowing,823
+Summer,Great Britain,Rowing,700
+Summer,Canada,Rowing,540
+Summer,Italy,Rowing,524
+Summer,Australia,Rowing,506
+Summer,Netherlands,Rowing,449
+Summer,Poland,Rowing,301
+Summer,Hungary,Rowing,182
+Summer,Japan,Rowing,179
+Summer,China,Rowing,148
+Summer,Sweden,Rowing,131
+Summer,Spain,Rowing,130
+Summer,Russia,Rowing,86
+Summer,Great Britain,Sailing,324
+Summer,Sweden,Sailing,324
+Summer,United States,Sailing,293
+Summer,Germany,Sailing,284
+Summer,Italy,Sailing,262
+Summer,Canada,Sailing,212
+Summer,Australia,Sailing,210
+Summer,Netherlands,Sailing,203
+Summer,Spain,Sailing,196
+Summer,Japan,Sailing,116
+Summer,Poland,Sailing,96
+Summer,Russia,Sailing,81
+Summer,Hungary,Sailing,77
+Summer,China,Sailing,60
+Summer,United States,Shooting,393
+Summer,Germany,Shooting,311
+Summer,Great Britain,Shooting,295
+Summer,Sweden,Shooting,283
+Summer,Italy,Shooting,249
+Summer,China,Shooting,197
+Summer,Australia,Shooting,187
+Summer,Hungary,Shooting,175
+Summer,Canada,Shooting,161
+Summer,Russia,Shooting,152
+Summer,Spain,Shooting,143
+Summer,Japan,Shooting,132
+Summer,Poland,Shooting,131
+Summer,Netherlands,Shooting,91
+Summer,United States,Swimming,818
+Summer,Great Britain,Swimming,662
+Summer,Germany,Swimming,638
+Summer,Australia,Swimming,521
+Summer,Canada,Swimming,411
+Summer,Japan,Swimming,409
+Summer,Italy,Swimming,343
+Summer,Sweden,Swimming,332
+Summer,Hungary,Swimming,325
+Summer,Netherlands,Swimming,311
+Summer,Spain,Swimming,220
+Summer,China,Swimming,217
+Summer,Russia,Swimming,162
+Summer,Poland,Swimming,116
+Summer,United States,Tennis,122
+Summer,Great Britain,Tennis,96
+Summer,Spain,Tennis,77
+Summer,Australia,Tennis,64
+Summer,Italy,Tennis,64
+Summer,Sweden,Tennis,62
+Summer,Germany,Tennis,52
+Summer,Russia,Tennis,47
+Summer,Japan,Tennis,43
+Summer,Canada,Tennis,39
+Summer,Hungary,Tennis,36
+Summer,China,Tennis,35
+Summer,Netherlands,Tennis,30
+Summer,Poland,Tennis,28
+Summer,United States,Volleyball,271
+Summer,Japan,Volleyball,232
+Summer,Italy,Volleyball,198
+Summer,Germany,Volleyball,160
+Summer,Russia,Volleyball,148
+Summer,Poland,Volleyball,146
+Summer,China,Volleyball,128
+Summer,Netherlands,Volleyball,113
+Summer,Canada,Volleyball,92
+Summer,Australia,Volleyball,52
+Summer,Hungary,Volleyball,47
+Summer,Spain,Volleyball,40
+Summer,Great Britain,Volleyball,24
+Summer,Sweden,Volleyball,12
+Summer,Hungary,Water Polo,270
+Summer,United States,Water Polo,267
+Summer,Italy,Water Polo,250
+Summer,Australia,Water Polo,223
+Summer,Netherlands,Water Polo,189
+Summer,Germany,Water Polo,188
+Summer,Spain,Water Polo,182
+Summer,Great Britain,Water Polo,96
+Summer,Russia,Water Polo,90
+Summer,Canada,Water Polo,74
+Summer,Japan,Water Polo,64
+Summer,China,Water Polo,63
+Summer,Sweden,Water Polo,56
+Summer,United States,Weightlifting,151
+Summer,Germany,Weightlifting,150
+Summer,Great Britain,Weightlifting,126
+Summer,Poland,Weightlifting,118
+Summer,Japan,Weightlifting,111
+Summer,Hungary,Weightlifting,98
+Summer,China,Weightlifting,93
+Summer,Italy,Weightlifting,93
+Summer,Australia,Weightlifting,78
+Summer,Sweden,Weightlifting,63
+Summer,Canada,Weightlifting,59
+Summer,Russia,Weightlifting,46
+Summer,Spain,Weightlifting,34
+Summer,Netherlands,Weightlifting,23
+Summer,United States,Wrestling,371
+Summer,Germany,Wrestling,279
+Summer,Sweden,Wrestling,264
+Summer,Hungary,Wrestling,260
+Summer,Japan,Wrestling,236
+Summer,Great Britain,Wrestling,178
+Summer,Poland,Wrestling,176
+Summer,Canada,Wrestling,163
+Summer,Italy,Wrestling,163
+Summer,Russia,Wrestling,121
+Summer,Australia,Wrestling,96
+Summer,China,Wrestling,81
+Summer,Netherlands,Wrestling,44
+Summer,Spain,Wrestling,40
+Winter,United States,Alpine Skiing,293
+Winter,Italy,Alpine Skiing,271
+Winter,Germany,Alpine Skiing,196
+Winter,Canada,Alpine Skiing,195
+Winter,Great Britain,Alpine Skiing,160
+Winter,Sweden,Alpine Skiing,141
+Winter,Spain,Alpine Skiing,94
+Winter,Japan,Alpine Skiing,87
+Winter,Australia,Alpine Skiing,60
+Winter,Poland,Alpine Skiing,52
+Winter,Russia,Alpine Skiing,38
+Winter,Hungary,Alpine Skiing,37
+Winter,China,Alpine Skiing,15
+Winter,Netherlands,Alpine Skiing,4
+Winter,Germany,Biathlon,133
+Winter,United States,Biathlon,103
+Winter,Italy,Biathlon,86
+Winter,Sweden,Biathlon,86
+Winter,Poland,Biathlon,77
+Winter,Russia,Biathlon,67
+Winter,Japan,Biathlon,64
+Winter,Canada,Biathlon,55
+Winter,China,Biathlon,46
+Winter,Great Britain,Biathlon,45
+Winter,Hungary,Biathlon,30
+Winter,Australia,Biathlon,11
+Winter,Spain,Biathlon,6
+Winter,Germany,Bobsleigh,235
+Winter,United States,Bobsleigh,218
+Winter,Italy,Bobsleigh,173
+Winter,Great Britain,Bobsleigh,161
+Winter,Canada,Bobsleigh,122
+Winter,Russia,Bobsleigh,66
+Winter,Japan,Bobsleigh,59
+Winter,Sweden,Bobsleigh,54
+Winter,Netherlands,Bobsleigh,37
+Winter,Poland,Bobsleigh,34
+Winter,Australia,Bobsleigh,32
+Winter,Hungary,Bobsleigh,17
+Winter,Spain,Bobsleigh,13
+Winter,Sweden,Cross Country Skiing,248
+Winter,Italy,Cross Country Skiing,231
+Winter,Germany,Cross Country Skiing,230
+Winter,United States,Cross Country Skiing,195
+Winter,Canada,Cross Country Skiing,122
+Winter,Japan,Cross Country Skiing,105
+Winter,Russia,Cross Country Skiing,100
+Winter,Poland,Cross Country Skiing,97
+Winter,Great Britain,Cross Country Skiing,54
+Winter,China,Cross Country Skiing,52
+Winter,Spain,Cross Country Skiing,38
+Winter,Australia,Cross Country Skiing,25
+Winter,Hungary,Cross Country Skiing,24
+Winter,United States,Figure Skating,273
+Winter,Canada,Figure Skating,212
+Winter,Germany,Figure Skating,191
+Winter,Great Britain,Figure Skating,162
+Winter,Russia,Figure Skating,96
+Winter,Japan,Figure Skating,83
+Winter,Italy,Figure Skating,79
+Winter,China,Figure Skating,64
+Winter,Hungary,Figure Skating,60
+Winter,Australia,Figure Skating,38
+Winter,Poland,Figure Skating,33
+Winter,Sweden,Figure Skating,30
+Winter,Spain,Figure Skating,11
+Winter,Netherlands,Figure Skating,8
+Winter,United States,Freestyle Skiing,105
+Winter,Canada,Freestyle Skiing,102
+Winter,Russia,Freestyle Skiing,72
+Winter,Australia,Freestyle Skiing,60
+Winter,Japan,Freestyle Skiing,48
+Winter,Sweden,Freestyle Skiing,47
+Winter,China,Freestyle Skiing,39
+Winter,Germany,Freestyle Skiing,29
+Winter,Italy,Freestyle Skiing,26
+Winter,Great Britain,Freestyle Skiing,22
+Winter,Spain,Freestyle Skiing,7
+Winter,Poland,Freestyle Skiing,2
+Winter,Netherlands,Freestyle Skiing,1
+Winter,United States,Ice Hockey,498
+Winter,Sweden,Ice Hockey,486
+Winter,Canada,Ice Hockey,469
+Winter,Germany,Ice Hockey,434
+Winter,Poland,Ice Hockey,219
+Winter,Russia,Ice Hockey,215
+Winter,Italy,Ice Hockey,191
+Winter,Japan,Ice Hockey,180
+Winter,China,Ice Hockey,58
+Winter,Great Britain,Ice Hockey,48
+Winter,Hungary,Ice Hockey,40
+Winter,Netherlands,Ice Hockey,20
+Winter,Australia,Ice Hockey,17
+Winter,Germany,Luge,182
+Winter,United States,Luge,134
+Winter,Italy,Luge,123
+Winter,Canada,Luge,79
+Winter,Russia,Luge,55
+Winter,Poland,Luge,49
+Winter,Japan,Luge,48
+Winter,Great Britain,Luge,36
+Winter,Sweden,Luge,31
+Winter,Spain,Luge,6
+Winter,Australia,Luge,5
+Winter,Germany,Ski Jumping,106
+Winter,United States,Ski Jumping,95
+Winter,Japan,Ski Jumping,79
+Winter,Poland,Ski Jumping,63
+Winter,Canada,Ski Jumping,55
+Winter,Sweden,Ski Jumping,52
+Winter,Italy,Ski Jumping,46
+Winter,Russia,Ski Jumping,27
+Winter,Hungary,Ski Jumping,7
+Winter,China,Ski Jumping,4
+Winter,Spain,Ski Jumping,4
+Winter,Great Britain,Ski Jumping,2
+Winter,United States,Speed Skating,286
+Winter,Japan,Speed Skating,227
+Winter,Netherlands,Speed Skating,208
+Winter,Germany,Speed Skating,204
+Winter,Canada,Speed Skating,192
+Winter,Sweden,Speed Skating,120
+Winter,China,Speed Skating,108
+Winter,Russia,Speed Skating,96
+Winter,Italy,Speed Skating,78
+Winter,Poland,Speed Skating,60
+Winter,Great Britain,Speed Skating,42
+Winter,Hungary,Speed Skating,24
+Winter,Australia,Speed Skating,23
