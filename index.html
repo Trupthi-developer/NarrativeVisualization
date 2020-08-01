@@ -230,7 +230,7 @@
             }
 
             // Call the resize function whenever a resize event occurs
-            //d3.select(window).on("resize", resize);
+            d3.select(window).on("resize", resize);
               resize();
 }
 </script>
@@ -260,10 +260,9 @@ var CountryDropDown = d3.select("#selectCountry")
 
 <script>
   async function dashboard(CountryValue){
-        const TotalMedalDistributionByCountry = await d3.csv("https://github.com/Trupthi-developer/NarrativeVisualization/blob/master/Top15CountriesTotalMedalData.csv");
-        const Top3SportMedalDistributionByCountry = await d3.csv("https://github.com/Trupthi-developer/NarrativeVisualization/blob/master/Top3SportByCountryMedalDistribution.csv");
-        const Top3SportGenderMedalDistributionByCountry = await d3.csv("https://github.com/Trupthi-developer/NarrativeVisualization/blob/master/Top3SportByCountryGenderMedalDistribution.csv");
-
+        const TotalMedalDistributionByCountry = await d3.csv("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/assignmentUIUC/Top15CountriesMedalDistributionOverYear.csv");
+        const Top3SportMedalDistributionByCountry = await d3.csv("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/assignmentUIUC/Top3SportByCountryMedalDistribution.csv");
+        const Top3SportGenderMedalDistributionByCountry = await d3.csv("https://raw.githubusercontent.com/Trupthi-developer/NarrativeVisualization/assignmentUIUC/Top3SportByCountryGenderMedalDistribution.csv");
     console.log(TotalMedalDistributionByCountry)
   }
 
