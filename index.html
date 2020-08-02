@@ -33,8 +33,8 @@
 <div class="w3-content" style="max-width:1400px">
 
 <header class="w3-container w3-center w3-padding-32">
- <h1 style="font-size:60px"><b>Olympic Participation and Top players</b></h1>
- <p style="font-size:35px">Welcome to the visualization of Olympic participation over 120 years</p>
+ <h1 style="font-size:60px"><b>All Time Olympic Participation</b></h1>
+ <p style="font-size:35px">Welcome to the visualization of Olympic participation over 100 years</p>
 
  <!-- Header -->
 <header id="portfolio">
@@ -44,7 +44,7 @@
   <h2><b>Olympic Drill Tower</b></h2>
   <div class="w3-section w3-bottombar w3-padding-16">
     <span class="w3-margin-right">Look For:</span>
-    <button class="w3-button w3-black">ALL</button>
+    <button class="w3-button w3-black">Overview</button>
     <a href="https://trupthi-developer.github.io/NarrativeVisualization/participationAnalysisByTop15Countries.html" class="w3-button w3-white"></i>Top Participation by Country</a>
     <a href="https://trupthi-developer.github.io/NarrativeVisualization/medalBasedDistributionByCountry.html" class="w3-button w3-white w3-hide-small"><i class="medalsByCountry"></i>Medals by Country</a>
   </div>
@@ -59,16 +59,15 @@
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
         <h3><b>Olympic Participation</b></h3>
-        <h5>Worldwide participation over, <span class="w3-opacity">120 years</span></h5>
+        <h5>Worldwide representation over <span class="w3-opacity">100 years</span></h5>
       </div>
 
       <div class="w3-container">
         <div class="w3-row">
-          <div class="w3-col m8 s12">
-              <p>Sneak peak on Olympics partitipation and medal distribution of countries over 120 years</p>
-
-              <p> This Visualization below gives the end-user an understanding of World's Olympic Participation over the past 120 years. Many countries have participated over time, and seeing a trend who were the top 15 participants over the years
-                would give us an understanding as to who are the top contenders in Olympics and have the chance of getting more medals.
+          <div class="w3-row m8 s12">
+              <p>This below geomap visualization offers the viewer an understanding of World's Olympic Participation. The color on the map only indicates that these countries have atleast participated once in Olympics over these 100 years. Grey color represents no participation/respresentaion till date.
+              </p>
+              <p> Now, if you hover over the map you identify the Country and overall unique participation count. Participants attending Olympics in atleast one sport, is identified for this accumulation. There are some atheletes who have been part of more than one event/sport over the years, in such cases only one head count has been considered.
               </p>
               <div id="GeoOverallParticipation" class="w3-container">
                   <div id="OlympicParticipation" class="w3-col m8 s12">
@@ -85,21 +84,27 @@
     <div class="w3-card-4 w3-margin w3-white">
 
       <div class="w3-container">
-        <h3><b>Trend Participation by Countries</b></h3>
+        <h3><b>Overall Country Participation Race</b></h3>
         <h5>Race participation to show who are the top contenders in Olympics, <span class="w3-opacity">As of 2016</span></h5>
-
       </div>
 
       <div class="w3-container">
-        <p>As you can see above, as the year passes by the countries's participation changes</p>
-        <button type="button" align="top" onclick="raceBarChartTotalDistribution()" class="w3-button w3-grey">Replay</button>
-        <div id="totalparticipationTrend" class="w3-container"></div>
+        <p>From the below race chart, we can see as the year passes the countries's participation changes. Many countries have participated over time, and seeing a trend who were the top 15 participants over the years
+          would give us an understanding as to who have the higher probability of winning more medals in Olympics.</p>
+        <p> Olympics has two kinds of major events, Summer and Winter. The race chart below shows accumulated participation of the countries in all such events. Here, the participating athletes count is snowbaling to eventually bring in the countries dominance in Olympics over these 100+ years.
+        </p>
+        <div id="spaceForButton" class="w3-row r4 s12">
+          <button type="button" align="top" onclick="raceBarChartTotalDistribution()" class="w3-button w3-grey">Replay</button>
+        </div>
+        <div id="totalparticipationTrend" class="w3-col m3 s12" ></div>
         <div class="w3-container">
-            <div class="w3-col m8 s12">
-                  <p> Description </p>
+            <div class="w3-row m8 s12">
+                  <p> You could see that there are countries that appear once and retrieve in the race. These are some examples of countries that either got disintegrated into multiple countries over the years or do not exist after some point in time in Olympics or were merged into another union.
+                  In this visualization countries like Germany who over the years represents not only as one but for a few Olympic events they represented as East and West Germany. They eventually got back together to form a single team. In such cases the visualization, has combined them to one team for these key
+                  years in consideration. But, there are countries/unions that retrieve from the race, like Soviet Union, even though their representations were early and high during the intial years, this union is no longer represented as we have many individual countries in Olympics post 1942</p>
             </div>
-            <div class="w3-col m9 w3-hide-small">
-                  <p> More Description </p>
+            <div class="w3-row m9 w3-hide-small">
+                  <p> If you want to see the animated visualization again, do click the "Replay" button. To see the race between the countries' cumulative participation from 1900 - 2016, to top 15.  </p>
             </div>
         </div>
       </div>
@@ -107,15 +112,7 @@
   <!-- END PAGE ENTRIES -->
   </div>
 
-  <!-- Description -->
-  <div class="w3-col">
-    <!-- About Card -->
-    <div class="w3-card w3-margin w3-margin-top">
-    <div class="w3-container w3-white">
-      <p> As seen here time race chart, over the years lot of countries have participated, yet we can see a trend as to who has most participation
-      <p>
-    </div>
-  </div><hr>
+<hr>
 
   <script type="text/javascript">
 
@@ -134,7 +131,7 @@
 
    var format = d3.format(",");
    var margin = {top: 10, right: 70, bottom: 10, left: 0},
-              width = 1260 - margin.left - margin.right,
+              width = 960 - margin.left - margin.right,
               height = 500 - margin.top - margin.bottom;
 
    var path = d3.geoPath();
@@ -235,7 +232,7 @@
 
     var n = 15;
     var barSize = 48
-    var tickDuration = 500;
+    var tickDuration = 1000;
 
 
 
@@ -263,8 +260,8 @@
 
             //margin = ({top: 16, right: 6, bottom: 6, left: 0})
 
-            xscale = d3.scaleLinear([0, 750], [1,width-margin.right])
-
+            xscale = d3.scaleLinear([d3.min(TotalParticipationByCountry,function(d){d.NumberOfParticipants}), d3.max(TotalParticipationByCountry,function(d){d.NumberOfParticipants})], [1,width-margin.right])
+            //xscale = d3.scaleLinear([0, 750)], [1,width-margin.right])
             yscale = d3.scaleBand()
               .domain(d3.range(n + 1))
               .rangeRound([margin.top, margin.top + barSize * (n + 1 + 0.1)])
