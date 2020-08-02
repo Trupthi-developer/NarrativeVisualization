@@ -167,6 +167,7 @@
      var xAxis = d3.axisBottom().scale(xScale);
      var yAxis = d3.axisLeft().scale(yScale);
 
+
      // Define lines
      var line = d3
        .line()
@@ -192,8 +193,6 @@
      var categoryByName = d3.keys(TotalMedalDistributionByCountry[0]).filter(function(key) {
          return key !== "Year";
        });
-
-
      color.domain(categoryByName);
 
 
@@ -218,7 +217,7 @@
                                  .attr("x", 45)
                                  .attr("y", 9.5)
                                  .attr("dy", "0.55em")
-                                 .text(d => d);
+                                 .text(d=>d);
                            }
 
 
@@ -257,12 +256,22 @@
                 // Three function that change the tooltip when user hover / move / leave a cell
                 var linemouseover = function(d) {
                   var Country = d.category;
-                  tooltip
-                          .attr("style", "left:"+(event.pageX)+"px;top:"+event.pageY+"px")
-                          .style("display","inline-block")
-                          .style("opacity", 1)
-                          .style("cursor","pointer")
-                          .html("Country: " + Country)
+                  var lineData = d.datapoints;
+
+                  const mouse = d3.mouse(this);
+
+                  const xm = xScale.invert(mouse[0]).toPrecision(4);
+                  const ym = yScale.invert(mouse[1])
+
+                  const yVal = (ym.toPrecision(3) < 100) ? ( ( ym.toPrecision(3) < 10) ? ( (ym.toPrecision(3)<1)? 0 :ym.toPrecision(1)):ym.toPrecision(2) ): ym.toPrecision(3);
+
+                  //console.log(data);
+                    tooltip
+                      .attr("style", "left:"+(event.pageX)+"px;top:"+event.pageY+"px")
+                      .style("display","inline-block")
+                      .style("opacity", 1)
+                      .style("cursor","pointer")
+                      .html("<strong>Country: " + d.category + "</strong><br><strong>Year</strong><span class='details'>" + xm + "<br></span><strong>Number of Medals: </strong><span class='details'>" + yVal + "<br></span>")
                     }
                 var linemouseleave = function(d) {
                   tooltip
