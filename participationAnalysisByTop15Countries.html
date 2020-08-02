@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <script src='https://d3js.org/d3.v5.js'></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
 <style>
     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     .country {
@@ -44,7 +43,7 @@
   <h2><b>Olympic Drill Tower</b></h2>
   <div class="w3-section w3-bottombar w3-padding-16">
     <span class="w3-margin-right">Look For:</span>
-    <a href="https://trupthi-developer.github.io/NarrativeVisualization/" class="w3-button w3-white">ALL</a>
+    <a href="https://trupthi-developer.github.io/NarrativeVisualization/" class="w3-button w3-white">Overview</a>
     <button class="w3-button w3-black"><i class="participationByTop15 w3-margin-center"></i>Top Participation by Country</button>
     <a href="https://trupthi-developer.github.io/NarrativeVisualization/medalBasedDistributionByCountry.html" class="w3-button w3-white"></i>Medals by Country</a>
   </div>
@@ -59,16 +58,21 @@
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
         <h3><b>Top 15 Olympic Participants</b></h3>
-        <h5>Participation over, <span class="w3-opacity">120 years</span></h5>
+        <h5>Participation over, <span class="w3-opacity">100 years</span></h5>
       </div>
 
       <div class="w3-container">
         <div class="w3-row">
-          <div class="w3-col m8 s12">
-              <p>Sneak peak on Olympics partitipation and medal distribution of countries over 120 years</p>
-
-              <p> This Visualization below gives the end-user an understanding of World's Olympic Participation over the past 120 years. Many countries have participated over time, and seeing a trend who were the top 15 participants over the years
-                would give us an understanding as to who are the top contenders in Olympics and have the chance of getting more medals.
+          <div class="w3-row m8 s12">
+              <p>As we have already seen and identified the top 15 countries by participation, the visualization below gives the viewer an understanding how these top 15 countries have participated over time and the events they participated in.
+                 Its interesting to know which country has got equal/even representations in these two event types, i.e., Summer and Winter. Note, there is also an event equestrian, but that event type has been excluded in the the following visualizations
+              </p>
+              <p>
+                 Just to give a clear visual representation of the two events in the below chart, I have picked the representing year <span style="text-shadow:1px 1px 0 #444"> 1924 </span> as default, the year when both these events first occurred. By choosing years between <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> 1924 - 1992 </span>, we can see both the visualizations for the two event kinds in consideration.
+                 The other years have a either or representations of the event. Mouseover on the bars to see their participation counts.
+              </p>
+              <p> Its not always true that countries dominating in participation, may not dominate in Winter events. Due to the kind of sports organized, their geological location, their expertise in sport in either kinds of events, country's qualified participation varies.
+                 For example, in the year <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> 1988 </span>, even though United States had an upper hand in Summer event, Germany took over in the Winter events
               </p>
               <!-- Initialize a select button -->
               <select id="selectYear" class="w3-col l5 s22" ></select>
@@ -85,60 +89,60 @@
     <div class="w3-card-4 w3-margin w3-white">
 
       <div class="w3-container">
-        <h3><b>Trend Participation by Sports</b></h3>
-        <h5>Heat Map to show the top sports these countries participate in Olympics, <span class="w3-opacity">As of 2016</span></h5>
+        <h3><b>Countries domination by Sports</b></h3>
+        <h5>Heat Map to show the sports these countries dominated by participating in them, in Winter and Summer Olympics, <span class="w3-opacity">As of 2016</span></h5>
+        <p> The visualization below, allows you to choose the event type and get an insight on the kinds of events these countries participated. Mouse over the cells in the map to get the number of participations by country.
+        </p>
+        <p>Based on cumulative participations, from the race chart we identified these top 15 countries to further drill down their best or most played sport. In order to understand where their participation concentrates, the below heat map shows darker hue colors for higher participation and vice versa
+          From this, the most popular sport in <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> Summer </span>, seems to be <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> Athletics, Swimming, and Rowing </span>
+          and in <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> Winter </span> it seems to be <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> Ice Hockey, Speed Skating and Alpine Skiing </span>
+        </p>
 
       </div>
 
       <div class="w3-container">
-        <p>As you can see above, as the year passes by the countries's participation changes</p>
-        <div class="w3-col m8 s12">
+        <div class="w3-row m8 s12">
               <!-- Initialize a select button -->
             <select id="selectEventType" class="w3-col l5 s22"></select>
             <div id="SportOlympicParticipation" class="w3-col l15 s22">
-        </div>
-        </div>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-                <p> Description </p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
-
-          </div>
+            </div>
         </div>
       </div>
     </div>
 
 
-    <!-- Blog entry -->
+    <!-- Gender Based Distribution entry -->
     <div class="w3-card-4 w3-margin w3-white">
 
       <div class="w3-container">
-        <h3><b>Trend Participation by Sports</b></h3>
-        <h5>Heat Map to show the top sports these countries participate in Olympics, <span class="w3-opacity">As of 2016</span></h5>
-
+        <h3><b>Participation by Gender</b></h3>
+        <h5>Below stacked line area chart show the gender participation by the countries over the years in Olympics, <span class="w3-opacity">As of 2016</span></h5>
+        <p> Now that we have seen the event types and sports, it will be interesting to know the participation by gender in each of the sports.
+            The most popular sport being <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> Athletics </span>, I have defaulted it to that representation.
+        </p>
+        <p>As you can see below, as the year passes by, the countries's female participation is improving. This can be seen in almost all of the sports listed in the drop down.
+          Choose the favourite sport to dive deeper.
+          From this chart we can derive an unique insight on understanding the fact that, countries have made significant effort in bringing in female participants for these sports and their participation trend is similar to male participations.
+          We can see the gap in time (for the sport Athletics) when the female participation started, yet the trend between the two genders has been very promising.
+        </p>
       </div>
 
       <div class="w3-container">
-        <p>As you can see above, as the year passes by the countries's participation changes</p>
         <div class="w3-col m8 s12">
-          <div id="GenderBasedSportParticipation" class="w3-col m15 s12">
-            <h3> Gender based participation in each Sport</h3>
-            <select id="selectSport"></select>
+                  <!-- Initialize a select button -->
+                  <select id="selectSport"></select>
+                  <div id="GenderBasedSportParticipation" class="w3-col m15 s12">
           </div>
         </div>
-        </div>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-                <p> Description </p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
+        <div class="w3-container">
+          <div class="w3-row m8 s12">
 
+              </div>
           </div>
         </div>
       </div>
     </div>
-  <!-- END BLOG ENTRIES -->
+  <!-- END PAGE ENTRIES -->
   </div>
 
 
@@ -336,7 +340,7 @@
       var yearValue = d3.select("#selectYear")
                         .on("change",dropdownChange );
 
-      plotEventByYear("1988");
+      plotEventByYear("1924");
   }
 
 
