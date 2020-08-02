@@ -55,7 +55,7 @@
 <!-- Grid -->
 <div class="w3-row">
   <div class="w3-col l150 s85">
-    <!-- Blog entry -->
+    <!-- Global Participation entry -->
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
         <h3><b>Olympic Participation</b></h3>
@@ -81,7 +81,7 @@
 
     <hr>
 
-    <!-- Blog entry -->
+    <!-- Race Chart entry -->
     <div class="w3-card-4 w3-margin w3-white">
 
       <div class="w3-container">
@@ -94,24 +94,26 @@
         <p>As you can see above, as the year passes by the countries's participation changes</p>
         <button type="button" align="top" onclick="raceBarChartTotalDistribution()" class="w3-button w3-grey">Replay</button>
         <div id="totalparticipationTrend" class="w3-container"></div>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-                <p> Description </p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
-
-          </div>
+        <div class="w3-container">
+            <div class="w3-col m8 s12">
+                  <p> Description </p>
+            </div>
+            <div class="w3-col m9 w3-hide-small">
+                  <p> More Description </p>
+            </div>
         </div>
       </div>
     </div>
-  <!-- END BLOG ENTRIES -->
+  <!-- END PAGE ENTRIES -->
   </div>
 
-  <!-- Introduction menu -->
-  <div class="w3-col l4">
+  <!-- Description -->
+  <div class="w3-col">
     <!-- About Card -->
     <div class="w3-card w3-margin w3-margin-top">
     <div class="w3-container w3-white">
+      <p> As seen here time race chart, over the years lot of countries have participated, yet we can see a trend as to who has most participation
+      <p>
     </div>
   </div><hr>
 
@@ -126,7 +128,8 @@
     var executeChartOne = raceBarChartTotalDistribution();
 
   }
-  //Code for Event based distribution
+
+    //Code for Event based distribution
   async function olympicParticipantDistribution () {
 
    var format = d3.format(",");
