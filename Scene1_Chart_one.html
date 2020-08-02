@@ -5,6 +5,12 @@
     <script src="https://d3js.org/topojson.v1.min.js"></script>
   <body onload="init()">
   <style>
+    body {
+     color: #666;
+     background: #f2f2f2;
+     font: normal 20px "Helvetica Neue", Helvetica, sans-serif;
+     margin: 2em;
+    }
   #olympicParticipation {
      border:2px solid #000;
      width:960px;
@@ -30,28 +36,29 @@
 
 
 </style>
-  </style>
 
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <h1 align=center> Olympics World Participation </h1>
 
-  <h2 align=center font-style="Comic-sans">Sneak peak on Olympics partitipation and medal distribution of countries over 120 years.
-  </h2>
+  <h4 align=center font-style="Comic-sans">Sneak peak on Olympics partitipation and medal distribution of countries over 120 years.
+  </h4>
 
 
 <p> This Visualization below gives Olympics overall participation. Many countries have participated over time the below geomap shows the countries that have participated in Olympics
 </p>
 
 <div id="OlympicParticipation"></div>
-
   <p> This Visualization below gives the end-user an understanding of World's Olympic Participation over the past 120 years. Many countries have participated over time, and seeing a trend who were the top 15 participants over the years
     would give us an understanding as to who are the top contenders in Olympics and have the chance of getting more medals.
   </p>
-
   </head>
+
+  <h3 align=center font-style="Comic-sans">Top 15 Countries in Olympics for past 120 years.
+  </h3>
 <button type="button" align="top" onclick="raceBarChartTotalDistribution()">Replay</button>
 <div id="totalparticipationTrend"></div>
+
 <p>
   As you can see above, as the year passes by the countries's particpation changes
 </p>
@@ -76,13 +83,13 @@ async function olympicParticipantDistribution () {
             width = 1260 - margin.left - margin.right,
             height = 500 - margin.top - margin.bottom;
 
-var path = d3.geoPath();
+ var path = d3.geoPath();
 
-var tooltip = d3.select("#OlympicParticipation").append("div")
+ var tooltip = d3.select("#OlympicParticipation").append("div")
                 .attr("class", "tooltip")
                 .style("display","none");
 
-var svg = d3.select("#OlympicParticipation")
+  var svg = d3.select("#OlympicParticipation")
             .append("svg")
             .attr('class', 'geoOlympicMapping')
             .attr("width", width)
