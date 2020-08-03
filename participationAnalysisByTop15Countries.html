@@ -69,7 +69,7 @@
               </p>
               <p>
                  Just to give a clear visual representation of the two events in the below chart, I have picked the representing year <span style="text-shadow:1px 1px 0 #444"> 1924 </span> as default, the year when both these events first occurred. By choosing years between <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> 1924 - 1992 </span>, we can see both the visualizations for the two event kinds in consideration.
-                 The other years have a either or representations of the event. Mouseover on the bars to see their participation counts.
+                 The other years have a either or representations of the event.
               </p>
               <p> Its not always true that countries dominating in participation, may not dominate in Winter events. Due to the kind of sports organized, their geological location, their expertise in sport in either kinds of events, country's qualified participation varies.
                  For example, in the year <span class="w3-medium" style="text-shadow:1px 1px 0 #444"> 1988 </span>, even though United States had an upper hand in Summer event, Germany took over in the Winter events
@@ -89,7 +89,7 @@
     <div class="w3-card-4 w3-margin w3-white">
 
       <div class="w3-container">
-        <h3><b>Countries domination by Sports</b></h3>
+        <h3><b>Country domination by Sports</b></h3>
         <h5>Heat Map to show the sports these countries dominated by participating in them, in Winter and Summer Olympics, <span class="w3-opacity">As of 2016</span></h5>
         <p> The visualization below, allows you to choose the event type and get an insight on the kinds of events these countries participated. Mouse over the cells in the map to get the number of participations by country.
         </p>
@@ -262,6 +262,7 @@
                 }
 
 
+
               //Plot GroupChart
               svg.selectAll("g")
                   .attr("class","allBars")
@@ -279,40 +280,46 @@
                     .attr("height", d => yScaleParticipants(0) - yScaleParticipants(d.value))
                     .attr("fill", d => color(d.key))
 
-
-                // Add the X Axis
-                svg.append("g")
-                    .attr("class", "x-axis")
-                    .attr("transform", `translate(0,${height-margin.bottom+10})`)
-                    .call(xAxis)
-                    .selectAll("text")
-                    .attr("transform","translate(-10,10)rotate(-45)");
+              svg.selectAll("#allBars")
+                  .on("mouseover", mouseover)
+                  .on("mousemove", mousemove)
+                  .on("mouseleave", mouseleave)
 
 
-                //Add label for x-axis
-                // text label for the x axis
-                svg.append("text")
-                    .attr("class", "x-axisLabel")
-                    .attr("transform",
-                          "translate(" + (width - 350) + " ," +
-                                         (height +10 ) + ")")
-                    .style("text-anchor", "middle")
-                    .text("Country");
+                  // Add the X Axis
+                  svg.append("g")
+                      .attr("class", "x-axis")
+                      .attr("transform", `translate(0,${height-margin.bottom+10})`)
+                      .call(xAxis)
+                      .selectAll("text")
+                      .attr("transform","translate(-10,10)rotate(-45)");
 
-                // Add the Y Axis
-                svg.append("g")
-                    .attr("class", "y-axis")
-                    .call(yAxis);
 
-                // text label for the y axis
-                svg.append("text")
-                    .attr("class", "y-axisLabel")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 0 - margin.left)
-                    .attr("x",0 - (height/2))
-                    .attr("dy", "1em")
-                    .style("text-anchor", "middle")
-                    .text("Number of Participants");
+                  //Add label for x-axis
+                  // text label for the x axis
+                  svg.append("text")
+                      .attr("class", "x-axisLabel")
+                      .attr("transform",
+                            "translate(" + (width - 350) + " ," +
+                                           (height +10 ) + ")")
+                      .style("text-anchor", "middle")
+                      .text("Country");
+
+                  // Add the Y Axis
+                  svg.append("g")
+                      .attr("class", "y-axis")
+                      .call(yAxis);
+
+                  // text label for the y axis
+                  svg.append("text")
+                      .attr("class", "y-axisLabel")
+                      .attr("transform", "rotate(-90)")
+                      .attr("y", 0 - margin.left)
+                      .attr("x",0 - (height/2))
+                      .attr("dy", "1em")
+                      .style("text-anchor", "middle")
+                      .text("Number of Participants");
+
 
                 svg.append("g")
                     .attr("class","legend")
