@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <script src='https://d3js.org/d3.v5.js'></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
 <style>
     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     .country {
@@ -70,16 +69,25 @@
     <!-- Blog entry -->
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
-        <h3><b>Top 15 Olympic Participants' Medal distribution over years</b></h3>
-        <h5>Medal growth over, <span class="w3-opacity">120 years</span></h5>
+        <h3><b>Top 15 Olympic Participants' Medal distribution Over Years</b></h3>
+        <h5>Medal growth over, <span class="w3-opacity">100 years</span></h5>
       </div>
 
       <div class="w3-container">
         <div class="w3-row">
-          <div class="w3-col m8 s12">
-              <p>Sneak peak on Olympics partitipation and medal distribution of countries over 120 years</p>
-
-              <p> This Visualization below gives Olympics medal based distribution on the top 15 countries. </p>
+          <div class="w3-row m8 s12">
+              <p>From the previous navigations, we have gained our insight on country's participation in Events, Sport and Gender based distinction. Now lets, dig deep into the Olympic Medal distributions.
+               </p>
+              <p> The visualization below gives Total Olympic medal obtained by the top 15 countries over the 100+ years. Since the participations across years 1900 - 1990,
+              it can be viewed that the total medal trends have been pretty variant in terms of countries that led high in the rank and as the year pass by, post 1990 the trend of the participating countries are a bit predictable.
+              Countries like United States, France and Great Britain were high medal winners, as years pass by United states stays in the lead and continues to keep that trend active, as of 2016.
+              And most of the other countries follow the same trend.
+             </p>
+             <p> Also to note, this is a total medal count, including Summer and Winter Events. Hence in the year range between 1990 - 2016, we can see some dips indicating that we had Winter Olympics in those time slots, showing less participations hence less medal counts
+                 As mentioned, USA's medal tally remained consistent over the years, but if you notice the Trend in 1977, Germany overtook USA's medal tally making them a great competitor.
+             </p>
+             <p> Mouseover the lines to see the various countries and their medal counts over the years
+             </p>
               <div id="OverallMedalDistributionOverOlympics"  class="w3-col l16 s12">
               </div>
               </div>
@@ -95,37 +103,40 @@
 
       <div id="Country Based Distribution" class="w3-container">
         <h3><b>Country Based Medal Analysis</b></h3>
-        <h5>Heat Map to show the top sports these countries participate in Olympics, <span class="w3-opacity">As of 2016</span></h5>
-
+        <h5>Top 3 Sports these countries participated in Olympics, <span class="w3-opacity">As of 2016</span></h5>
       </div>
 
       <div class="w3-container">
         <h3>Medal Distribution Chart</h3>
+        <p>In the above multiline chart we visualized how the total medals achieved by each country varied over the timeline of 100+ years.
+          In the below medal tally dashboard, we can explore each countries' Overall Medal distribution of Gold, Silver and Bronze till date.
+          Along with the sorting of the medals between Gold, Silver and Bronze, we can also know which sport was enabling country to acheive its landmark.
+        </p>
+        <p> To understand that I have picked top 3 Sport events, the countries got medals in and understand the ratios of Gold, Silver and Bronze medals they acheived.
+            One initial load the Medal distribution chart is showing for Australia. Use the drop down to choose the country to view overall medal tallies
+            And further on that's countries selection, choose between one of the top 3 sport to see the medal tally for that sport for that country.
+        </p>
+
         <div id="Medal Report" class="w3-col m8 s12">
           <!-- Initialize a select button -->
-          <select id="selectCountry" class="w3-col l5 s22"></select>
+          <select id="selectCountry" class="w3-col l5 s22">Choose Country</select>
            <div id="MedalBoard" class="w3-row">
                 <div id="Top3SportByCountryMedalStats" class="">
                 </div>
            </div>
              <div id="Top3BySport" class ="w3-cell-row" style="width:105%">
-                   <div id="Top3SportByCountryFullStats" class="w3-container w3-cell ">
-                   </div>
-                   <p> Top 3 Sport Medal distribution</p>
-                   <!-- Initialize a select button -->
-                   <select id="selectTop3Sport"></select>
+                   <div id="Top3SportByCountryFullStats" class="w3-row w3-cell" align="end">
+
+                    <h3 align="right"> Top 3 Sport Medal distribution</h3>
+                    <!-- Initialize a select button -->
+                    <select id="selectTop3Sport">Choose Sport</select>
+                    </div>
                     <div id="pieChartLayoutTop3SportMedal" class="w3-container w3-cell ">
                     </div>
              <div>
         </div>
         </div>
         <div class="w3-row">
-          <div class="w3-col m8 s12">
-                <p> Description </p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
-
-          </div>
         </div>
       </div>
     </div>
@@ -428,6 +439,8 @@
                            .attr('height',height)
                            .attr('stroke', 'white')
                            .attr('fill', '#fffbe6')
+                           .style("stroke", "rgba(35, 31, 32, 0.1)")
+                           .style("stroke-width", 8);
 
                 goldmedalGroup = svg.append("g")
                                 .attr("class","groupForMedals")
@@ -438,8 +451,9 @@
                                    .attr('cy', 45)
                                    .attr('r', 100)
                                    .attr('stroke', 'white')
-                                   .attr('fill', '#ffd500');
-
+                                   .attr('fill', '#ffd500')
+                                   .style("stroke", "rgba(35, 31, 32, 0.1)")
+                                   .style("stroke-width", 8);
 
                  silvermedalGroup = svg.selectAll(".groupForMedals").append("circle")
                                      .attr("class","silverMedalCircle")
@@ -447,7 +461,9 @@
                                      .attr('cy', 45)
                                      .attr('r', 100)
                                      .attr('stroke', 'white')
-                                     .attr('fill', '#c0c0c0');
+                                     .attr('fill', '#c0c0c0')
+                                     .style("stroke", "rgba(35, 31, 32, 0.1)")
+                                     .style("stroke-width", 8);
 
                 bronzemedalGroup = svg.select(".groupForMedals").append("circle")
                                       .attr("class","bronzeMedalCircle")
@@ -455,7 +471,9 @@
                                       .attr('cy', 45)
                                       .attr('r', 100)
                                       .attr('stroke', 'white')
-                                      .attr('fill', '#bf8040');
+                                      .attr('fill', '#bf8040')
+                                      .style("stroke", "rgba(35, 31, 32, 0.1)")
+                                      .style("stroke-width", 8);
 
                 var circleData = [
                            { "Gold": totalGoldMedal, "cx": 115, "cy": 45, "radius": 100},
@@ -606,7 +624,7 @@
                         .append("g")
                           .attr("class","top3SportMedalGroup")
                           .attr("transform",
-                                `translate(${width - margin.left -margin.bottom}, ${height - margin.left-margin.bottom} )`);
+                                `translate(${width - margin.left -margin.bottom}, ${height - margin.left} )`);
 
 
             var sportList = dataForTop3SportMedals.map(d=>d.Sport);
@@ -628,8 +646,7 @@
               var sport = dataForTop3SportMedals.filter(function(d){return d.Sport == sport});
               console.log(sport)
               const data = (({ Gold, Silver, Bronze }) => ({ Gold, Silver, Bronze }))(sport[0]);
-              //const SportB = (({ Gold, Silver, Bronze }) => ({ Gold, Silver, Bronze }))(secSport[0]);
-              //const SportC = (({ Gold, Silver, Bronze }) => ({ Gold, Silver, Bronze }))(thirdSport[0]);
+
               console.log(data)
               // Compute the position of each group on the pie:
               var pie = d3.pie()
@@ -657,6 +674,7 @@
                 .attr("stroke", "white")
                 .style("stroke-width", "2px")
                 .style("opacity", 1)
+
 
               u
                   .enter()
@@ -707,7 +725,7 @@
                         .text(function (d) { return d; }) // text showed in the menu
                         .attr("value", function (d) { return d; }) // corresponding value returned by the button
 
-  window.dashboard("United States");
+  window.dashboard("Australia");
   // Handler for dropdown value change
    var dropdownChange = function() {
       var Country = d3.select(this).property('value');
